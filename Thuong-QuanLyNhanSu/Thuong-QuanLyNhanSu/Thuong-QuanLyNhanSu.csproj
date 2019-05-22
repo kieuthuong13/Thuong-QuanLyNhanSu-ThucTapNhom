@@ -46,8 +46,97 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\frmDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDuAn.Designer.cs">
+      <DependentUpon>frmDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmMainNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMainNV.Designer.cs">
+      <DependentUpon>frmMainNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPhanCong.Designer.cs">
+      <DependentUpon>frmPhanCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPhongBan.Designer.cs">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQuanLy.Designer.cs">
+      <DependentUpon>frmQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LoginSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LoginSQL.Designer.cs">
+      <DependentUpon>LoginSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PasswordChangingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PasswordChangingForm.Designer.cs">
+      <DependentUpon>PasswordChangingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\Delete.cs" />
+    <Compile Include="Query\Insert.cs" />
+    <Compile Include="Query\Select.cs" />
+    <Compile Include="Query\Update.cs" />
+    <Compile Include="SQL\FillTo.cs" />
+    <Compile Include="SQL\SQLServer.cs" />
+    <Compile Include="StructQuanLyNhanSu\MyStruct.cs" />
+    <Compile Include="StructQuanLyNhanSu\MyStructEnum.cs" />
+    <EmbeddedResource Include="GUI\frmDuAn.resx">
+      <DependentUpon>frmDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMainNV.resx">
+      <DependentUpon>frmMainNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPhanCong.resx">
+      <DependentUpon>frmPhanCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPhongBan.resx">
+      <DependentUpon>frmPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQuanLy.resx">
+      <DependentUpon>frmQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LoginSQL.resx">
+      <DependentUpon>LoginSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PasswordChangingForm.resx">
+      <DependentUpon>PasswordChangingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -56,6 +145,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -69,6 +159,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duann.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_1755.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhanvien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phancong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phongban.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tienluong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-6-hinh-anh-nha-xuong-dep-khong-the-bo-qua-2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

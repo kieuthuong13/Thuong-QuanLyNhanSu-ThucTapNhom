@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Thuong_QuanLyNhanSu
+namespace QuanLyNhanSu
 {
     static class Program
     {
@@ -16,7 +16,12 @@ namespace Thuong_QuanLyNhanSu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+
+            flogin = new GUI.frmLogin();
+
+            Application.Run(flogin);
         }
+        public static GUI.frmLogin flogin;
     }
 }
