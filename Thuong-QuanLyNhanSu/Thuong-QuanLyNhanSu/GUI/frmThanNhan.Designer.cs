@@ -1,4 +1,4 @@
-﻿namespace Thuong_QuanLyNhanSu.GUI
+﻿namespace QuanLyNhanSu.GUI
 {
     partial class frmThanNhan
     {
@@ -61,6 +61,7 @@
             this.dgvThanNhan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvThanNhan.Size = new System.Drawing.Size(670, 370);
             this.dgvThanNhan.TabIndex = 192;
+            this.dgvThanNhan.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThanNhan_RowEnter);
             // 
             // txtTimKiem
             // 
@@ -79,6 +80,7 @@
             this.btnThoat.TabIndex = 190;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // txtMaNV
             // 
@@ -205,6 +207,7 @@
             this.btnLamMoi.Text = "Làm Mới";
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.UseVisualStyleBackColor = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // btnThem
             // 
@@ -221,6 +224,7 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnLuu
             // 
@@ -237,6 +241,7 @@
             this.btnLuu.Text = "Lưu Mới";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnXoa
             // 
@@ -252,6 +257,7 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 

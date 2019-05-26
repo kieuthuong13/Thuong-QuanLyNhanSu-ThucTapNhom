@@ -82,6 +82,20 @@ namespace QuanLyNhanSu.GUI
             t.Show();
         }
 
+        private void picThanNhan_Click(object sender, EventArgs e)
+        {
+            GUI.frmThanNhan tn = new GUI.frmThanNhan();
+            tn.Show();
+            this.Hide();
+        }
+
+        private void LbThanNhan_Click(object sender, EventArgs e)
+        {
+            GUI.frmThanNhan tn = new GUI.frmThanNhan();
+            tn.Show();
+            this.Hide();
+        }
+
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -113,13 +127,6 @@ namespace QuanLyNhanSu.GUI
             LbDangXuat.Location = new Point(this.Size.Width - 85, LbDangXuat.Location.Y);
             LbTroGiup.Location = new Point(this.Size.Width - 180, LbTroGiup.Location.Y);
             pictureBox1.Size = new Size(this.Size.Width - 110, this.Size.Height - 80);
-        }
-
-        private void picCongTy_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GUI.frmPhanCong t = new frmPhanCong();
-            t.Show();
         }
     }
 }

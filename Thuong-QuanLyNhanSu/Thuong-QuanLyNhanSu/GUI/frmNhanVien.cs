@@ -157,6 +157,7 @@ namespace QuanLyNhanSu.GUI
                 db.Database.ExecuteSqlCommand("UPDATE NHANVIEN_CONGTY SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.Database.ExecuteSqlCommand("UPDATE PHANCONG SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.Database.ExecuteSqlCommand("UPDATE THANNHAN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("UPDATE NHANVIEN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);

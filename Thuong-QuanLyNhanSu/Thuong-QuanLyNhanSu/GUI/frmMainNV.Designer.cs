@@ -169,11 +169,13 @@
             // LbThanNhan
             // 
             this.LbThanNhan.AutoSize = true;
-            this.LbThanNhan.Location = new System.Drawing.Point(18, 520);
+            this.LbThanNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbThanNhan.Location = new System.Drawing.Point(11, 520);
             this.LbThanNhan.Name = "LbThanNhan";
-            this.LbThanNhan.Size = new System.Drawing.Size(61, 13);
+            this.LbThanNhan.Size = new System.Drawing.Size(74, 16);
             this.LbThanNhan.TabIndex = 10;
             this.LbThanNhan.Text = "Thân Nhân";
+            this.LbThanNhan.Click += new System.EventHandler(this.LbThanNhan_Click);
             // 
             // LbCongTy
             // 
@@ -194,6 +196,7 @@
             this.picThanNhan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picThanNhan.TabIndex = 8;
             this.picThanNhan.TabStop = false;
+            this.picThanNhan.Click += new System.EventHandler(this.picThanNhan_Click);
             // 
             // picCongTy
             // 
@@ -204,7 +207,6 @@
             this.picCongTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCongTy.TabIndex = 7;
             this.picCongTy.TabStop = false;
-            this.picCongTy.Click += new System.EventHandler(this.picCongTy_Click);
             // 
             // picPhongBan
             // 
