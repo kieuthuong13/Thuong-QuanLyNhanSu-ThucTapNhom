@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.LbTroGiup = new System.Windows.Forms.Label();
-            this.LbTienLuong = new System.Windows.Forms.Label();
             this.LbPhanCong = new System.Windows.Forms.Label();
             this.LbDangXuat = new System.Windows.Forms.Label();
             this.LbTrangChu = new System.Windows.Forms.Label();
@@ -38,17 +37,21 @@
             this.LbPhongBan = new System.Windows.Forms.Label();
             this.LbNhanVien = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.LbThanNhan = new System.Windows.Forms.Label();
+            this.LbCongTy = new System.Windows.Forms.Label();
+            this.picThanNhan = new System.Windows.Forms.PictureBox();
+            this.picCongTy = new System.Windows.Forms.PictureBox();
             this.picPhongBan = new System.Windows.Forms.PictureBox();
             this.picDuAn = new System.Windows.Forms.PictureBox();
-            this.picTienLuong = new System.Windows.Forms.PictureBox();
             this.picPhanCong = new System.Windows.Forms.PictureBox();
             this.picNhanVien = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picThanNhan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCongTy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhongBan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDuAn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTienLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhanCong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,22 +68,11 @@
             this.LbTroGiup.Text = "Đổi mật khẩu";
             this.LbTroGiup.Click += new System.EventHandler(this.LbTroGiup_Click);
             // 
-            // LbTienLuong
-            // 
-            this.LbTienLuong.AutoSize = true;
-            this.LbTienLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbTienLuong.Location = new System.Drawing.Point(15, 429);
-            this.LbTienLuong.Name = "LbTienLuong";
-            this.LbTienLuong.Size = new System.Drawing.Size(75, 16);
-            this.LbTienLuong.TabIndex = 7;
-            this.LbTienLuong.Text = "Tiền Lương";
-            this.LbTienLuong.Click += new System.EventHandler(this.LbTienLuong_Click);
-            // 
             // LbPhanCong
             // 
             this.LbPhanCong.AutoSize = true;
             this.LbPhanCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbPhanCong.Location = new System.Drawing.Point(16, 342);
+            this.LbPhanCong.Location = new System.Drawing.Point(7, 342);
             this.LbPhanCong.Name = "LbPhanCong";
             this.LbPhanCong.Size = new System.Drawing.Size(74, 16);
             this.LbPhanCong.TabIndex = 3;
@@ -156,11 +148,13 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.groupBox2.Controls.Add(this.LbTienLuong);
+            this.groupBox2.Controls.Add(this.LbThanNhan);
+            this.groupBox2.Controls.Add(this.LbCongTy);
+            this.groupBox2.Controls.Add(this.picThanNhan);
+            this.groupBox2.Controls.Add(this.picCongTy);
             this.groupBox2.Controls.Add(this.LbPhanCong);
             this.groupBox2.Controls.Add(this.picPhongBan);
             this.groupBox2.Controls.Add(this.picDuAn);
-            this.groupBox2.Controls.Add(this.picTienLuong);
             this.groupBox2.Controls.Add(this.picPhanCong);
             this.groupBox2.Controls.Add(this.LbDuAn);
             this.groupBox2.Controls.Add(this.LbPhongBan);
@@ -168,9 +162,49 @@
             this.groupBox2.Controls.Add(this.picNhanVien);
             this.groupBox2.Location = new System.Drawing.Point(1, 40);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(100, 474);
+            this.groupBox2.Size = new System.Drawing.Size(100, 560);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
+            // 
+            // LbThanNhan
+            // 
+            this.LbThanNhan.AutoSize = true;
+            this.LbThanNhan.Location = new System.Drawing.Point(18, 520);
+            this.LbThanNhan.Name = "LbThanNhan";
+            this.LbThanNhan.Size = new System.Drawing.Size(61, 13);
+            this.LbThanNhan.TabIndex = 10;
+            this.LbThanNhan.Text = "Thân Nhân";
+            // 
+            // LbCongTy
+            // 
+            this.LbCongTy.AutoSize = true;
+            this.LbCongTy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbCongTy.Location = new System.Drawing.Point(18, 433);
+            this.LbCongTy.Name = "LbCongTy";
+            this.LbCongTy.Size = new System.Drawing.Size(59, 16);
+            this.LbCongTy.TabIndex = 9;
+            this.LbCongTy.Text = "Công Ty";
+            // 
+            // picThanNhan
+            // 
+            this.picThanNhan.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.thannhan;
+            this.picThanNhan.Location = new System.Drawing.Point(11, 452);
+            this.picThanNhan.Name = "picThanNhan";
+            this.picThanNhan.Size = new System.Drawing.Size(79, 65);
+            this.picThanNhan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picThanNhan.TabIndex = 8;
+            this.picThanNhan.TabStop = false;
+            // 
+            // picCongTy
+            // 
+            this.picCongTy.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.company;
+            this.picCongTy.Location = new System.Drawing.Point(11, 361);
+            this.picCongTy.Name = "picCongTy";
+            this.picCongTy.Size = new System.Drawing.Size(79, 65);
+            this.picCongTy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCongTy.TabIndex = 7;
+            this.picCongTy.TabStop = false;
+            this.picCongTy.Click += new System.EventHandler(this.picCongTy_Click);
             // 
             // picPhongBan
             // 
@@ -195,18 +229,6 @@
             this.picDuAn.TabIndex = 2;
             this.picDuAn.TabStop = false;
             this.picDuAn.Click += new System.EventHandler(this.picDuAn_Click);
-            // 
-            // picTienLuong
-            // 
-            this.picTienLuong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picTienLuong.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.tienluong;
-            this.picTienLuong.Location = new System.Drawing.Point(11, 361);
-            this.picTienLuong.Name = "picTienLuong";
-            this.picTienLuong.Size = new System.Drawing.Size(79, 65);
-            this.picTienLuong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTienLuong.TabIndex = 3;
-            this.picTienLuong.TabStop = false;
-            this.picTienLuong.Click += new System.EventHandler(this.picTienLuong_Click);
             // 
             // picPhanCong
             // 
@@ -237,8 +259,8 @@
             this.pictureBox1.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.top_6_hinh_anh_nha_xuong_dep_khong_the_bo_qua_2;
             this.pictureBox1.Location = new System.Drawing.Point(97, 40);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(952, 474);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(1024, 560);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -246,7 +268,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 513);
+            this.ClientSize = new System.Drawing.Size(1045, 599);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox1);
@@ -258,23 +280,23 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picThanNhan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCongTy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhongBan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDuAn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTienLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhanCong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.PictureBox picDuAn;
         private System.Windows.Forms.Label LbTroGiup;
-        private System.Windows.Forms.Label LbTienLuong;
         private System.Windows.Forms.Label LbPhanCong;
         private System.Windows.Forms.PictureBox picPhongBan;
-        private System.Windows.Forms.PictureBox picTienLuong;
         private System.Windows.Forms.Label LbDangXuat;
         private System.Windows.Forms.Label LbTrangChu;
         private System.Windows.Forms.PictureBox picPhanCong;
@@ -285,5 +307,9 @@
         private System.Windows.Forms.PictureBox picNhanVien;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label LbThanNhan;
+        private System.Windows.Forms.Label LbCongTy;
+        private System.Windows.Forms.PictureBox picThanNhan;
+        private System.Windows.Forms.PictureBox picCongTy;
     }
 }

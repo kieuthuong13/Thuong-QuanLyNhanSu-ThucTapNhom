@@ -8,227 +8,159 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Thuong_QuanLyNhanSu.Models;
+using System.Data.Entity.Migrations;
 
 namespace QuanLyNhanSu.GUI
 {
     public partial class frmNhanVien : Form
     {
-        SqlConnection localConnect;
-        SqlCommand localCommand = new SqlCommand();
+        QuanLyNhanVien db = new QuanLyNhanVien();
+        public void Clear()
+        {
+            txtMaNV.Clear();
+            txtTenNV.Clear();
+            txtDiaChi.Clear();
+            txtMaNGS.Clear();
+            txtMaPB.Clear();
+            cbxGioiTinh.Focus();
+        }
         public frmNhanVien()
         {
             InitializeComponent();
 
             this.MaximizeBox = false;
-            this.MaximumSize = this.MinimumSize = new Size(1200, 600);
-            this.btnLuu.Enabled = false;
-            this.btnXoa.Enabled = false;
-            this.txtMaNV.Enabled = false;
-            this.btnCancel.Enabled = false;
-            this.dgvNhanVien.ReadOnly = true;
+            this.MaximumSize = this.MinimumSize = new Size(1200, 800);
 
-            EditInfoMode(false);
-
-            localConnect = GUI.SQLServer.GetMySQL();
-            localCommand.Connection = localConnect;
-
-            GUI.FillTo.DataGridViews("NHANVIEN",ref this.dgvNhanVien);
         }
 
-        private void EditInfoMode(bool _AreYouSure = false)
+        private void frmNhanVien_Load(object sender, EventArgs e)
         {
-            this.txtTenNV.Enabled = _AreYouSure;
-            this.txtGioiTinh.Enabled = _AreYouSure;
-            this.dtpNgaySinh.Enabled = _AreYouSure;
-            this.txtDiaChi.Enabled = _AreYouSure;
-            this.txtLuong.Enabled = _AreYouSure;
-            this.txtMaNGS.Enabled = _AreYouSure;
-            this.txtMaPB.Enabled = _AreYouSure;
-            this.txtTaiKhoan.Enabled = _AreYouSure;
-
-            this.btnLuu.Enabled = _AreYouSure;
-            this.btnXoa.Enabled = _AreYouSure;
-            this.btnCancel.Enabled = _AreYouSure;
-
-            this.dgvNhanVien.Enabled = true;
+            this.dgvNhanVien.DataSource = db.NHANVIENs.ToList();
         }
 
-        private bool IsClickAddTwice = false;
+        private void frmNhanVien_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmMainNV frm = new frmMainNV();
+            frm.Show();
+            this.Hide();
+        }
+    
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            frmMainNV frm = new frmMainNV();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            dgvNhanVien.DataSource = db.NHANVIENs.ToList();
+        }
+
         private void btnThem_Click(object sender, EventArgs e)
         {
-            this.txtMaNV.Text = GUI.Insert.NHANVIEN.GetNextIndex().ToString();
-            if (IsClickAddTwice)
-            {
-                MyStruct.NHANVIEN nv = new MyStruct.NHANVIEN();
-                nv.TENNV = this.txtTenNV.Text ?? null;
-                nv.GIOITINH = this.txtGioiTinh.Text ?? null;
-                nv.NGAYSINH = DateTime.Parse(this.dtpNgaySinh.Text);
-                nv.DIACHI = this.txtDiaChi.Text ?? null;
-                nv.BACLUONG = int.Parse(this.txtLuong.Text);
-                nv.MA_NGS = int.Parse(this.txtMaNGS.Text);
-                nv.MAPB = int.Parse(this.txtMaPB.Text);
-                nv.ACCOUNT = this.txtTaiKhoan.Text;
-                this.IsClickAddTwice = false;
-
-
-                if (GUI.Insert.NHANVIEN.CreateNewRecord(nv))
-                {
-                    MessageBox.Show("Create success!");
-                }
-
-                this.btnCancel_Click(sender, e);
-                this.btnRefersh_Click(sender, e);
-                this.btnSua.Enabled = true;
-                EditInfoMode(false);
-
-                return;
-            }
-
-            this.IsClickAddTwice = true;
-
-            EditInfoMode(true);
-            this.dgvNhanVien.Enabled = false;
-            this.btnSua.Enabled = false;
-            this.btnXoa.Enabled = false;
-            this.btnLuu.Enabled = false;
-
-            this.btnRefersh_Click(sender, e);
+            Clear();
         }
-
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            EditInfoMode(true);
-            this.dgvNhanVien.Enabled = false;
-        }
-
-        private void btnRefersh_Click(object sender, EventArgs e)
-        {
-            GUI.FillTo.DataGridViews("NHANVIEN", ref this.dgvNhanVien);
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(this.txtTimKiem.Text))
-            {
-                Find(this.txtTimKiem.Text);
-            }
-        }
-        private bool Find(string strSearch)
-        {
-            for(int j = 0; j < this.dgvNhanVien.ColumnCount; ++j)
-            {
-                for(int i = 0; i < this.dgvNhanVien.RowCount; ++i)
-                {
-                    try
-                    {
-                        if (this.dgvNhanVien.Rows[i].Cells[j].Value.ToString() == strSearch)
-                        {
-                            //dataGridView1.Rows[row].Selected = true;
-                            this.dgvNhanVien.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                            return true;
-                        }
-                        if (3 <= j && j <= 7)
-                        {
-                            j = 7;
-                            break;
-                        }
-                    }
-                    catch
-                    {
-                        continue;
-                    }
-                    
-                }
-            }
-            return false;
-        }
-
-        private void dgvNhanVien_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            try
-            {
-                this.txtMaNV.Text = this.dgvNhanVien.SelectedRows[0].Cells["MaNV"].Value.ToString();
-                this.txtTenNV.Text = this.dgvNhanVien.SelectedRows[0].Cells["TenNV"].Value.ToString();
-                this.txtGioiTinh.Text = this.dgvNhanVien.SelectedRows[0].Cells["GioiTinh"].Value.ToString();
-                this.dtpNgaySinh.Text = this.dgvNhanVien.SelectedRows[0].Cells["NgaySinh"].Value.ToString();
-                this.txtDiaChi.Text = this.dgvNhanVien.SelectedRows[0].Cells["DiaChi"].Value.ToString();
-                this.txtLuong.Text = this.dgvNhanVien.SelectedRows[0].Cells["Luong"].Value.ToString();
-                this.txtMaNGS.Text = this.dgvNhanVien.SelectedRows[0].Cells["MaNGS"].Value.ToString();
-                this.txtMaPB.Text = this.dgvNhanVien.SelectedRows[0].Cells["MaPB"].Value.ToString();
-                this.txtTaiKhoan.Text = this.dgvNhanVien.SelectedRows[0].Cells["TaiKhoan"].Value.ToString();
-            }
-            catch
-            {
-                this.txtMaNV.Text = "";
-                this.txtTenNV.Text = "";
-                this.txtGioiTinh.Text = "";
-                this.dtpNgaySinh.Text = "";
-                this.txtDiaChi.Text = "";
-                this.txtLuong.Text = "";
-                this.txtMaNGS.Text = "";
-                this.txtMaPB.Text = "";
-                this.txtTaiKhoan.Text = "";
-            }
-            
-        }
-
-        
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            // luu data vào trong sql
-            MyStruct.NHANVIEN nv = new MyStruct.NHANVIEN();
-            nv.MANV = int.Parse(this.txtMaNV.Text);
-            nv.TENNV = !string.IsNullOrWhiteSpace(this.txtTenNV.Text) ? this.txtTenNV.Text : "Đã bị xoá";
-            nv.GIOITINH = this.txtGioiTinh.Text ?? "Khác";
-            nv.NGAYSINH = DateTime.Parse(this.dtpNgaySinh.Text);
-            nv.DIACHI = this.txtDiaChi.Text ?? " ";
-            nv.BACLUONG = !string.IsNullOrWhiteSpace(this.txtLuong.Text) ? int.Parse(this.txtLuong.Text) : 1;
-            nv.MA_NGS = int.Parse(this.txtMaNGS.Text);
-            nv.MAPB = int.Parse(this.txtMaPB.Text);
-            nv.ACCOUNT = this.txtTaiKhoan.Text;
+            //bấm nút lưu thì nó sẽ lưu bản ghe
+            try
+            {
+                NHANVIEN nv = new NHANVIEN();
 
-            GUI.Update.NHANVIEN.UpdateOneRecord(nv);
+                //gán giá trị từ textbox vào các biến
+                nv.MaNhanVien = int.Parse(txtMaNV.Text);
+                nv.TenNhanVien = txtTenNV.Text;
+                nv.NgaySinh = dtpNgaySinh.Value;
+                nv.GioiTinh = cbxGioiTinh.Text;
+                nv.DiaChi = txtDiaChi.Text;
+                nv.MaNguoiGiamSat = int.Parse(txtMaNGS.Text);
+                nv.MaPhongBan = int.Parse(txtMaPB.Text);
 
-            this.btnRefersh_Click(sender, e);
-            EditInfoMode(false);
+                //thêm hoặc update bản ghi của nhân viên
+
+                db.NHANVIENs.AddOrUpdate(nv);
+
+                //lưu thay đổi
+                db.SaveChanges();
+                MessageBox.Show("Thêm dữ liệu nhân viên thành công!");
+
+                btnLamMoi_Click(sender, e);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Một hoặc nhiều thông tin đang để trống!\nXin hãy kiểm tra lại");
+                return;
+            }
+        }
+
+        private void dgvNhanVien_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            //cái này để xử lý nếu mình click vào một ô trong datagridview
+            try
+            {
+                //xét dòng vừa click vào, hoặc vừa chọn vào:
+                //cái này gán vào textboc
+                //if để xét nếu ô = null
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["MaNhanVien"].Value != null)
+                {
+                    txtMaNV.Text = dgvNhanVien.Rows[e.RowIndex].Cells["MaNhanVien"].Value.ToString();
+                }
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["TenNhanVien"].Value != null)
+                {
+                    txtTenNV.Text = dgvNhanVien.Rows[e.RowIndex].Cells["TenNhanVien"].Value.ToString();
+                }
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["DiaChi"].Value != null)
+                {
+                    txtDiaChi.Text = dgvNhanVien.Rows[e.RowIndex].Cells["DiaChi"].Value.ToString();
+                }
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["NgaySinh"].Value != null)
+                {
+                    dtpNgaySinh.Value = DateTime.Parse(dgvNhanVien.Rows[e.RowIndex].Cells["NgaySinh"].Value.ToString());
+                }
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["GioiTinh"].Value != null)
+                {
+                    cbxGioiTinh.Text = dgvNhanVien.Rows[e.RowIndex].Cells["GioiTinh"].Value.ToString();
+                }
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["MaNguoiGiamSat"].Value != null)
+                {
+                    txtMaNGS.Text = dgvNhanVien.Rows[e.RowIndex].Cells["MaNguoiGiamSat"].Value.ToString();
+                }
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["MaPhongBan"].Value != null)
+                {
+                    txtMaPB.Text = dgvNhanVien.Rows[e.RowIndex].Cells["MaPhongBan"].Value.ToString();
+                }
+            }
+            catch (Exception)
+            {
+                //trường họp không load được -> lầm tróng tất cả các ô
+                Clear();
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            // xoá nhân viên
-            if (!GUI.Delete.NHANVIEN.DeleteRecord_Primary(int.Parse(this.txtMaNV.Text)))
+            //hỏi lại có chắc chắn muốn xóa k
+            if (DialogResult.OK == MessageBox.Show("Xóa bản ghi hiện tại sẽ làm thay đổi hoặc xóa các bản ghi liên kết!\nBạn có muốn tiếp tục không?"
+                , "Cảnh báo xóa!", MessageBoxButtons.OKCancel))
             {
-                if (DialogResult.Yes ==
-                    MessageBox.Show("Cant delete\nCause this record is connecting to the other record!\n\n\nDo you want to delete all of the another record connecting this?? :D ?",
-                    "Can not delete the record!", MessageBoxButtons.YesNo))
-                {
-                    if (GUI.Delete.PHANCONG.DeleteAllRecord_HaveTableX(MyStruct.PHANCONG.enumStruct.MANV, this.txtMaNV.Text)
-                        && GUI.Delete.NHANVIEN.DeleteRecord_Primary(int.Parse(this.txtMaNV.Text)))
-                    {
-                        MessageBox.Show("Delete success!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Cant del the record!");
-                    }
+                // muốn xóa thằng nhân viên này thì phải xóa các bản ghi dùng mã nhân viên làm khóa chính (trong bảng khác)
+                // và thay đổi các bản ghi dùng mã nhân viên làm khóa phụ (có thể update cho nó = null, hoặc nếu xóa luôn nếu thích)
 
-                }
+                // trong bảng nhân viên thì có bảng hóa đơn + tài khoản lấy mã nhân viên làm khóa phụ
+                // có thể sửa thành null các bản ghi dùng mã nhân viên, hoặc xóa cmn đi nếu cần
+
+                db.Database.ExecuteSqlCommand("UPDATE BAOHIEMXAHOI SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("UPDATE BAOHIEMYTE SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("UPDATE NHANVIEN_CONGTY SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("UPDATE PHANCONG SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("UPDATE THANNHAN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.SaveChanges();
+                MessageBox.Show("Xóa bản ghi thành công!");
+                btnLamMoi_Click(sender, e);
             }
-            else
-            {
-                MessageBox.Show("Delete success!");
-            }
-            
-                
-
-            this.btnRefersh_Click(sender, e);
-            EditInfoMode(false);
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            EditInfoMode(false);
         }
     }
 }

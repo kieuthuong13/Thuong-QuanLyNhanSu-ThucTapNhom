@@ -15,7 +15,7 @@ namespace QuanLyNhanSu.GUI
         public static GUI.PasswordChangingForm fchangepass;
         private MyStruct.TAIKHOAN myAccount = new MyStruct.TAIKHOAN();
 
-        public frmMainNV(MyStruct.TAIKHOAN _Account)
+        public frmMainNV()
         {
             InitializeComponent();
             // this.MaximizeBox = this.MinimizeBox = false;
@@ -23,76 +23,62 @@ namespace QuanLyNhanSu.GUI
 
             LbDangXuat.Location = new Point(this.Size.Width - 85, LbDangXuat.Location.Y);
             LbTroGiup.Location = new Point(this.Size.Width - 180, LbTroGiup.Location.Y);
-            myAccount = _Account;
+          
         }
 
         private void LbNhanVien_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.NHANVIEN);
+            GUI.frmNhanVien t = new frmNhanVien();
             t.Show();
         }
 
         private void picNhanVien_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.NHANVIEN);
+            GUI.frmNhanVien t = new frmNhanVien();
             t.Show();
         }
 
         private void LbPhongBan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.PHONGBAN);
+            GUI.frmPhongBan t = new frmPhongBan();
             t.Show();
         }
 
         private void picPhongBan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.PHONGBAN);
+            GUI.frmPhongBan t = new frmPhongBan();
             t.Show();
         }
 
         private void LbDuAn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.DUAN);
+            GUI.frmDuAn t = new frmDuAn();
             t.Show();
         }
 
         private void picDuAn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.DUAN);
+            GUI.frmDuAn t = new frmDuAn();
             t.Show();
         }
 
         private void picPhanCong_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.PHANCONG);
+            GUI.frmPhanCong t = new frmPhanCong();
             t.Show();
         }
 
         private void LbPhanCong_Click(object sender, EventArgs e)
         {
             this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.PHANCONG);
-            t.Show();
-        }
-
-        private void LbTienLuong_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.LUONG);
-            t.Show();
-        }
-
-        private void picTienLuong_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GUI.frmQuanLy t = new frmQuanLy(MyStruct.MyTableName.LUONG);
+            GUI.frmPhanCong t = new frmPhanCong();
             t.Show();
         }
 
@@ -127,6 +113,13 @@ namespace QuanLyNhanSu.GUI
             LbDangXuat.Location = new Point(this.Size.Width - 85, LbDangXuat.Location.Y);
             LbTroGiup.Location = new Point(this.Size.Width - 180, LbTroGiup.Location.Y);
             pictureBox1.Size = new Size(this.Size.Width - 110, this.Size.Height - 80);
+        }
+
+        private void picCongTy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GUI.frmPhanCong t = new frmPhanCong();
+            t.Show();
         }
     }
 }

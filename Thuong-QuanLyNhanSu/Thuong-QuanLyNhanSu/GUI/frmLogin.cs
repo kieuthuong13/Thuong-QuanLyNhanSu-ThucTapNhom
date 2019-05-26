@@ -17,8 +17,9 @@ namespace QuanLyNhanSu.GUI
         public frmLogin()
         {
             InitializeComponent();
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.MinimumSize = new Size(1200, 800);
+            //this.MaximizeBox = false;
+            //this.MinimizeBox = false;
         }
 
         public void ClearInput()
@@ -38,15 +39,15 @@ namespace QuanLyNhanSu.GUI
             MyStruct.TAIKHOAN taikhoan = GUI.Select.TAIKHOAN.GetTopOneRecord(textBoxUser.Text);
 
             // Đăng nhập thành công thì nhảy vào
-            if (string.Equals(taikhoan.PASSWORD, this.textBoxPass.Text))
+            if (this.textBoxPass.Text == taikhoan.PASSWORD)
             {
                 // MessageBox.Show("Đăng nhập thành công.");
 
                 // Phân quyền
 
                 this.Hide();
-                
-                fmain = new frmMainNV(taikhoan);
+
+                fmain = new frmMainNV();
                 fmain.Show();
             }
             else

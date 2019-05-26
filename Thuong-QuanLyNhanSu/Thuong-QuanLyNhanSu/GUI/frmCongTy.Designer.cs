@@ -1,6 +1,6 @@
-﻿namespace QuanLyNhanSu.GUI
+﻿namespace Thuong_QuanLyNhanSu.GUI
 {
-    partial class LoginSQL
+    partial class frmCongTy
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // LoginSQL
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "LoginSQL";
-            this.Text = "LoginSQL";
-            this.Load += new System.EventHandler(this.LoginSQL_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "frmCongTy";
         }
 
         #endregion

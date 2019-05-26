@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyNhanSu.GUI
+namespace Thuong_QuanLyNhanSu.GUI
 {
-    public partial class LoginSQL : Form
+    public partial class frmCongTy : Form
     {
-        public LoginSQL()
+        public frmCongTy()
         {
             InitializeComponent();
-        }
-
-        private void LoginSQL_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
