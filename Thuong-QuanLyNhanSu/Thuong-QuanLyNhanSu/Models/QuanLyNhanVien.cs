@@ -8,20 +8,18 @@ namespace Thuong_QuanLyNhanSu.Models
     public partial class QuanLyNhanVien : DbContext
     {
         public QuanLyNhanVien()
-            : base("name=QuanLyNhanVien")
+            : base("name=QuanLyNhanVien1")
         {
         }
 
         public virtual DbSet<BAOHIEMXAHOI> BAOHIEMXAHOIs { get; set; }
         public virtual DbSet<BAOHIEMYTE> BAOHIEMYTEs { get; set; }
-        public virtual DbSet<CONGTY> CONGTies { get; set; }
         public virtual DbSet<DUAN> DUANs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
         public virtual DbSet<PHANCONG> PHANCONGs { get; set; }
         public virtual DbSet<PHONGBAN> PHONGBANs { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
         public virtual DbSet<THANNHAN> THANNHANs { get; set; }
-        public virtual DbSet<NHANVIEN_CONGTY> NHANVIEN_CONGTY { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

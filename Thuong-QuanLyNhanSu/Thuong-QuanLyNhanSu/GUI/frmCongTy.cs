@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Thuong_QuanLyNhanSu.GUI
+namespace QuanLyNhanSu.GUI
 {
     public partial class frmCongTy : Form
     {

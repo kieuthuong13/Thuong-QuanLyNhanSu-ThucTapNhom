@@ -117,10 +117,8 @@
     </Compile>
     <Compile Include="Models\BAOHIEMXAHOI.cs" />
     <Compile Include="Models\BAOHIEMYTE.cs" />
-    <Compile Include="Models\CONGTY.cs" />
     <Compile Include="Models\DUAN.cs" />
     <Compile Include="Models\NHANVIEN.cs" />
-    <Compile Include="Models\NHANVIEN_CONGTY.cs" />
     <Compile Include="Models\PHANCONG.cs" />
     <Compile Include="Models\PHONGBAN.cs" />
     <Compile Include="Models\QuanLyNhanVien.cs" />

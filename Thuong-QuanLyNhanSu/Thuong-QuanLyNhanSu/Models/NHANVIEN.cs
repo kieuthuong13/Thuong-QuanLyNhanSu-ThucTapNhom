@@ -14,7 +14,6 @@ namespace Thuong_QuanLyNhanSu.Models
         {
             BAOHIEMXAHOIs = new HashSet<BAOHIEMXAHOI>();
             BAOHIEMYTEs = new HashSet<BAOHIEMYTE>();
-            NHANVIEN_CONGTY = new HashSet<NHANVIEN_CONGTY>();
             PHANCONGs = new HashSet<PHANCONG>();
             THANNHANs = new HashSet<THANNHAN>();
         }
@@ -37,14 +36,13 @@ namespace Thuong_QuanLyNhanSu.Models
 
         public int? MaPhongBan { get; set; }
 
+        public int? Luong { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BAOHIEMXAHOI> BAOHIEMXAHOIs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BAOHIEMYTE> BAOHIEMYTEs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<NHANVIEN_CONGTY> NHANVIEN_CONGTY { get; set; }
 
         public virtual PHONGBAN PHONGBAN { get; set; }
 

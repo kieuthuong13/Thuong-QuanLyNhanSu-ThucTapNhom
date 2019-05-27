@@ -1,4 +1,4 @@
-﻿namespace Thuong_QuanLyNhanSu.GUI
+﻿namespace QuanLyNhanSu.GUI
 {
     partial class frmCongTy
     {
