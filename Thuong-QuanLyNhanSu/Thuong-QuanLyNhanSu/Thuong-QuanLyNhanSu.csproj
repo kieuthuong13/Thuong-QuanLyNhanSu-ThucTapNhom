@@ -260,5 +260,8 @@
   <ItemGroup>
     <None Include="Resources\Baohiemyte.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="CreateTable_QLNV_TTN_ThuThuong.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
