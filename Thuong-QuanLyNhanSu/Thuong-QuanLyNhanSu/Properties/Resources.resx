@@ -127,6 +127,9 @@
   <data name="duan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\duan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMG_1755" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_1755.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="phancong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phancong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,9 +138,6 @@
   </data>
   <data name="anh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anh1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anh3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="nhanvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nhanvien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,16 +160,19 @@
   <data name="duann" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\duann.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="IMG_1755" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_1755.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="anh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anh3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tienluong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tienluong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hoacuc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoacuc1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hoacuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hoacuc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hoacuc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hoacuc1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Baohiemyte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Baohiemyte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
