@@ -113,6 +113,16 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BaoHiemXaHoi {
+            get {
+                object obj = ResourceManager.GetObject("BaoHiemXaHoi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap company {
             get {
                 object obj = ResourceManager.GetObject("company", resourceCulture);
@@ -146,6 +156,16 @@ namespace Thuong_QuanLyNhanSu.Properties {
         internal static System.Drawing.Bitmap hoacuc {
             get {
                 object obj = ResourceManager.GetObject("hoacuc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hoacuc1 {
+            get {
+                object obj = ResourceManager.GetObject("hoacuc1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

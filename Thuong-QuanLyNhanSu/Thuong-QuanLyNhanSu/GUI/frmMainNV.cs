@@ -128,5 +128,33 @@ namespace QuanLyNhanSu.GUI
             LbTroGiup.Location = new Point(this.Size.Width - 180, LbTroGiup.Location.Y);
             pictureBox1.Size = new Size(this.Size.Width - 110, this.Size.Height - 80);
         }
+
+        private void picBHYT_Click(object sender, EventArgs e)
+        {
+            frmBaoHiemYTe yt = new frmBaoHiemYTe();
+            yt.Show();
+            this.Hide();
+        }
+
+        private void LbBHYT_Click(object sender, EventArgs e)
+        {
+            frmBaoHiemYTe yt = new frmBaoHiemYTe();
+            yt.Show();
+            this.Hide();
+        }
+
+        private void picBHXH_Click(object sender, EventArgs e)
+        {
+            frmBaoHiemXaHoi xh = new frmBaoHiemXaHoi();
+            xh.Show();
+            this.Hide();
+        }
+
+        private void LbBHXH_Click(object sender, EventArgs e)
+        {
+            frmBaoHiemXaHoi xh = new frmBaoHiemXaHoi();
+            xh.Show();
+            this.Hide();
+        }
     }
 }

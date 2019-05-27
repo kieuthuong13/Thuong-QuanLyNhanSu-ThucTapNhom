@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\frmBaoHiemXaHoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBaoHiemXaHoi.Designer.cs">
+      <DependentUpon>frmBaoHiemXaHoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmBaoHiemYTe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBaoHiemYTe.Designer.cs">
+      <DependentUpon>frmBaoHiemYTe.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmCongTy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +146,12 @@
     <Compile Include="SQL\SQLServer.cs" />
     <Compile Include="StructQuanLyNhanSu\MyStruct.cs" />
     <Compile Include="StructQuanLyNhanSu\MyStructEnum.cs" />
+    <EmbeddedResource Include="GUI\frmBaoHiemXaHoi.resx">
+      <DependentUpon>frmBaoHiemXaHoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmBaoHiemYTe.resx">
+      <DependentUpon>frmBaoHiemYTe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDuAn.resx">
       <DependentUpon>frmDuAn.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +250,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hoacuc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaoHiemXaHoi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoacuc1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

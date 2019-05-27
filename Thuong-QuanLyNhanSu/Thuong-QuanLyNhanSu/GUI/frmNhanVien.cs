@@ -24,6 +24,7 @@ namespace QuanLyNhanSu.GUI
             txtMaNGS.Clear();
             txtMaPB.Clear();
             cbxGioiTinh.Focus();
+            txtLuong.Clear();
         }
         public frmNhanVien()
         {
@@ -78,6 +79,7 @@ namespace QuanLyNhanSu.GUI
                 nv.DiaChi = txtDiaChi.Text;
                 nv.MaNguoiGiamSat = int.Parse(txtMaNGS.Text);
                 nv.MaPhongBan = int.Parse(txtMaPB.Text);
+                nv.Luong = int.Parse(txtLuong.Text);
 
                 //thêm hoặc update bản ghi của nhân viên
 
@@ -132,6 +134,10 @@ namespace QuanLyNhanSu.GUI
                 {
                     txtMaPB.Text = dgvNhanVien.Rows[e.RowIndex].Cells["MaPhongBan"].Value.ToString();
                 }
+                if (dgvNhanVien.Rows[e.RowIndex].Cells["Luong"].Value != null)
+                {
+                    txtMaPB.Text = dgvNhanVien.Rows[e.RowIndex].Cells["Luong"].Value.ToString();
+                }
             }
             catch (Exception)
             {
@@ -154,7 +160,6 @@ namespace QuanLyNhanSu.GUI
 
                 db.Database.ExecuteSqlCommand("UPDATE BAOHIEMXAHOI SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.Database.ExecuteSqlCommand("UPDATE BAOHIEMYTE SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
-                db.Database.ExecuteSqlCommand("UPDATE NHANVIEN_CONGTY SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.Database.ExecuteSqlCommand("UPDATE PHANCONG SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.Database.ExecuteSqlCommand("UPDATE THANNHAN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.Database.ExecuteSqlCommand("UPDATE NHANVIEN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
