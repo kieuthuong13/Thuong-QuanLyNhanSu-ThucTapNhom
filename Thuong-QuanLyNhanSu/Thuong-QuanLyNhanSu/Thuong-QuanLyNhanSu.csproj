@@ -67,12 +67,6 @@
     <Compile Include="GUI\frmBaoHiemYTe.Designer.cs">
       <DependentUpon>frmBaoHiemYTe.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmCongTy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\frmCongTy.Designer.cs">
-      <DependentUpon>frmCongTy.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\frmDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,5 +257,6 @@
   <ItemGroup>
     <Content Include="CreateTable_QLNV_TTN_ThuThuong.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

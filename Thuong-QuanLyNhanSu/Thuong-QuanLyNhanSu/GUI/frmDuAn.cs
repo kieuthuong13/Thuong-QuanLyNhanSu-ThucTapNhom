@@ -58,6 +58,7 @@ namespace QuanLyNhanSu.GUI
         private void btnThem_Click(object sender, EventArgs e)
         {
             Clear();
+            txtMaDA.Text = (db.Database.SqlQuery<int>("SELECT TOP 1 MAX(MaDuAn) FROM DUAN").SingleOrDefault() + 1).ToString();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -67,7 +68,7 @@ namespace QuanLyNhanSu.GUI
                 DUAN da = new DUAN();
                 //gán giá trị từ textbox vào các biến
 
-                da.MaDuAn = int.Parse(txtMaDA.Text);
+                //da.MaDuAn = int.Parse(txtMaDA.Text);
                 da.TenDuAn = txtTenDA.Text;
                 da.DiaDiem = txtDiaDiem.Text;
                 da.MaPhongBan = int.Parse(txtMaPB.Text);
@@ -138,8 +139,8 @@ namespace QuanLyNhanSu.GUI
                 // có thể sửa thành null các bản ghi dùng MaDuAn, hoặc xóa cmn đi nếu cần
 
                 //đang lỗi
-                db.Database.ExecuteSqlCommand("UPDATE PHANCONG SET MaDuAn = NULL WHERE MaDuAn = " + txtMaDA.Text);
-                db.Database.ExecuteSqlCommand("UPDATE DUAN SET MaDuAn = NULL WHERE MaDuAn = " + txtMaDA.Text);
+                db.Database.ExecuteSqlCommand("DELETE PHANCONG WHERE MaDuAn = " + txtMaDA.Text);
+                db.Database.ExecuteSqlCommand("DELETE DUAN WHERE MaDuAn = " + txtMaDA.Text);
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);

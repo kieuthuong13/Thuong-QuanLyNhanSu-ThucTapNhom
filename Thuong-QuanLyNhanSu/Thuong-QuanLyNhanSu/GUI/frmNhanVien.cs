@@ -70,9 +70,9 @@ namespace QuanLyNhanSu.GUI
             try
             {
                 NHANVIEN nv = new NHANVIEN();
-
+                //db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT [dbo].[NHANVIEN] ON");
                 //gán giá trị từ textbox vào các biến
-                //nv.MaNhanVien = int.Parse(txtMaNV.Text);
+                nv.MaNhanVien = int.Parse(txtMaNV.Text);
                 nv.TenNhanVien = txtTenNV.Text;
                 nv.NgaySinh = dtpNgaySinh.Value;
                 nv.GioiTinh = cbxGioiTinh.Text;
@@ -84,7 +84,7 @@ namespace QuanLyNhanSu.GUI
                 //thêm hoặc update bản ghi của nhân viên
 
                 db.NHANVIENs.AddOrUpdate(nv);
-
+                //db.Database.ExecuteSqlCommand("SET IDENTITY_INSERT [dbo].[NHANVIEN] OFF");
                 //lưu thay đổi
                 db.SaveChanges();
                 MessageBox.Show("Thêm dữ liệu nhân viên thành công!");

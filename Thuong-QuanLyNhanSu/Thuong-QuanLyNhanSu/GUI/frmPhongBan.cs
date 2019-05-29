@@ -56,6 +56,7 @@ namespace QuanLyNhanSu.GUI
         private void btnThem_Click(object sender, EventArgs e)
         {
             Clear();
+            txtMaPB.Text = (db.Database.SqlQuery<int>("SELECT TOP 1 MAX(MaPhongBan) FROM PHONGBAN").SingleOrDefault() + 1).ToString();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -65,7 +66,7 @@ namespace QuanLyNhanSu.GUI
                 PHONGBAN pb = new PHONGBAN();
 
                 //gán giá trị từ textbox vào các biến
-                pb.MaPhongBan = int.Parse(txtMaPB.Text);
+                //pb.MaPhongBan = int.Parse(txtMaPB.Text);
                 pb.TenPhongBan = txtTenPB.Text;
                 pb.NgayNhanChuc = dtpNgayNC.Value;
                 pb.DiaDiem = txtDiaDiem.Text;
@@ -138,6 +139,7 @@ namespace QuanLyNhanSu.GUI
 
                 db.Database.ExecuteSqlCommand("UPDATE NHANVIEN SET MaPhongBan = NULL WHERE MaPhongBan = " + txtMaPB.Text);
                 db.Database.ExecuteSqlCommand("UPDATE DUAN SET MaPhongBan = NULL WHERE MaPhongBan = " + txtMaPB.Text);
+                db.Database.ExecuteSqlCommand("DELETE PHONGBAN WHERE MaPhongBan = " + txtMaPB.Text);
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);

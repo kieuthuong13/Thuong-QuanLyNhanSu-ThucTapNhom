@@ -149,7 +149,7 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(129, 303);
+            this.txtMaNV.Location = new System.Drawing.Point(129, 301);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(191, 20);
             this.txtMaNV.TabIndex = 161;

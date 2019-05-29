@@ -98,8 +98,8 @@ namespace QuanLyNhanSu.GUI
                 , "Cảnh báo xóa!", MessageBoxButtons.OKCancel))
             {
                 db.Database.ExecuteSqlCommand("UPDATE NHANVIEN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
-                db.Database.ExecuteSqlCommand("UPDATE THANNHAN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
-                db.Database.ExecuteSqlCommand("UPDATE THANNHAN SET TenThanNhan = NULL WHERE TenThanNhan = " + txtTenTN.Text);
+                db.Database.ExecuteSqlCommand("DELETE THANNHAN WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("DELETE THANNHAN WHERE TenThanNhan = " + txtTenTN.Text);
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);

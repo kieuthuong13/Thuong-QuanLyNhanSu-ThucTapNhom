@@ -58,6 +58,7 @@ namespace QuanLyNhanSu.GUI
         private void btnThem_Click(object sender, EventArgs e)
         {
             Clear();
+            txtMaBHXH.Text = (db.Database.SqlQuery<int>("SELECT TOP 1 MAX(MaBHXH) FROM BAOHIEMXAHOI").SingleOrDefault() + 1).ToString();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -68,7 +69,7 @@ namespace QuanLyNhanSu.GUI
                 BAOHIEMXAHOI yt = new BAOHIEMXAHOI();
 
                 //gán giá trị từ textbox vào các biến
-                yt.MaBHXH = int.Parse(txtMaBHXH.Text);
+                //yt.MaBHXH = int.Parse(txtMaBHXH.Text);
                 yt.TrangThai = int.Parse(txtTrangThai.Text);
                 yt.SoTien = int.Parse(txtSoTien.Text);
                 yt.MaNhanVien = int.Parse(txtMaNV.Text);
@@ -129,7 +130,7 @@ namespace QuanLyNhanSu.GUI
             if (DialogResult.OK == MessageBox.Show("Xóa bản ghi hiện tại sẽ làm thay đổi hoặc xóa các bản ghi liên kết!\nBạn có muốn tiếp tục không?"
                 , "Cảnh báo xóa!", MessageBoxButtons.OKCancel))
             {
-                db.Database.ExecuteSqlCommand("UPDATE BAOHIEMXAHOI SET MaBHXH = NULL WHERE MaBHYT = " + txtMaBHXH.Text);
+                db.Database.ExecuteSqlCommand("DELETE BAOHIEMXAHOI WHERE MaBHXH = " + txtMaBHXH.Text);
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);

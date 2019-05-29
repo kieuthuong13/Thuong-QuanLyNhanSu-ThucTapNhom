@@ -67,7 +67,7 @@ namespace QuanLyNhanSu.GUI
                 //gán giá trị từ textbox vào các biến
 
                 pc.MaNhanVien = int.Parse(txtMaNV.Text);
-                pc.MaNhanVien = int.Parse(txtMaDA.Text);
+                pc.MaDuAn = int.Parse(txtMaDA.Text);
                 pc.SoGioThamGia = int.Parse(txtSoGio.Text);
 
                 //thêm hoặc update bản ghi của bảng phân công
@@ -128,8 +128,7 @@ namespace QuanLyNhanSu.GUI
                 // có thể sửa thành null các bản ghi dùng mã nhân viên, hoặc xóa cmn đi nếu cần
                 
                 //đang lỗi
-                db.Database.ExecuteSqlCommand("UPDATE PHANCONG SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
-                db.Database.ExecuteSqlCommand("UPDATE PHANCONG SET MaDuAn = NULL WHERE MaDuAn = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("DELETE PHANCONG WHERE MaNhanVien =" + txtMaNV.Text + " AND MaDuAn = " + txtMaDA.Text);
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);
