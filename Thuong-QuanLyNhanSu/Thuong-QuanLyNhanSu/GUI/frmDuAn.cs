@@ -27,14 +27,13 @@ namespace QuanLyNhanSu.GUI
         public frmDuAn()
         {
             InitializeComponent();
-
-            this.MaximizeBox = false;
-            this.MaximumSize = this.MinimumSize = new Size(1200, 800);
+            this.MinimumSize = new Size(1200, 800);
         }
 
         private void frmDuAn_Load(object sender, EventArgs e)
         {
             dgvDuAn.DataSource = db.DUANs.ToList();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmDuAn_FormClosed(object sender, FormClosedEventArgs e)

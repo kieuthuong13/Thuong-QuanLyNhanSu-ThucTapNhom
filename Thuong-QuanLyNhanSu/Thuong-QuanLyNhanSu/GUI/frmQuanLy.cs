@@ -22,7 +22,7 @@ namespace QuanLyNhanSu.GUI
 
         // Kiểu bảng nào truyền vào
         private GUI.MyStruct.MyTableName eNameTable = new MyStruct.MyTableName();
-        
+        private Thuong_QuanLyNhanSu.Models.QuanLyNhanVien db;
 
 
         public frmQuanLy(GUI.MyStruct.MyTableName nameTable)
@@ -234,6 +234,11 @@ namespace QuanLyNhanSu.GUI
         /// <param name="e"></param>
         private void QuanLy_Load(object sender, EventArgs e)
         {
+            // ẩn cái form đang sở hữu nó đi
+            this.Owner.Hide();
+
+            db = new Thuong_QuanLyNhanSu.Models.QuanLyNhanVien();
+
             this.Text = @"Quản lý " + eNameTable.ToString();
             EditMode(true);
             GUI.FillTo.DataGridViews(eNameTable.ToString(), ref this.dataGridView1);
@@ -241,6 +246,7 @@ namespace QuanLyNhanSu.GUI
 
             _locationNextTextBox = this.groupBox3.Location;
 
+            // tự động sinh label và textbox dựa trên bảng đang dùng
             for (int i = 0; i < this.dataGridView1.ColumnCount; i++)
             {
                 // tạo label mới hiển thị nhãn
@@ -925,13 +931,14 @@ namespace QuanLyNhanSu.GUI
 
         private void button8_Thoat_Click(object sender, EventArgs e)
         {
-            GUI.frmLogin.fmain.Show();
-            this.Dispose();
+            frmQuanLy_FormClosing(sender, new FormClosingEventArgs(CloseReason.UserClosing, false));
         }
 
         private void frmQuanLy_FormClosing(object sender, FormClosingEventArgs e)
         {
-            GUI.frmLogin.fmain.Show();
+            this.Owner.Show();
+            this.Owner.Enabled = true;
+            this.Owner = null;
             this.Dispose();
         }
 

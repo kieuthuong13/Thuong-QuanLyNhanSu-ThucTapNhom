@@ -25,13 +25,13 @@ namespace QuanLyNhanSu.GUI
         public frmPhongBan()
         {
             InitializeComponent();
-            this.MaximizeBox = false;
-            this.MaximumSize = this.MinimumSize = new Size(1200, 800);
+            this.MinimumSize = new Size(1200, 800);
         }
      
         private void frmPhongBan_Load(object sender, EventArgs e)
         {
             this.dgvNhanVien.DataSource = db.PHONGBANs.ToList();
+            this.WindowState = FormWindowState.Maximized;
         }
         
         private void frmPhongBan_FormClosed(object sender, FormClosedEventArgs e)

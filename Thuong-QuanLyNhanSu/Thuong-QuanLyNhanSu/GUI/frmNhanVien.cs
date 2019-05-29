@@ -26,18 +26,17 @@ namespace QuanLyNhanSu.GUI
             cbxGioiTinh.Focus();
             txtLuong.Clear();
         }
+
         public frmNhanVien()
         {
             InitializeComponent();
-
-            this.MaximizeBox = false;
-            this.MaximumSize = this.MinimumSize = new Size(1200, 800);
-
+            this.MinimumSize = new Size(1200, 800);
         }
 
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
-            this.dgvNhanVien.DataSource = db.NHANVIENs.ToList();
+            btnLamMoi_Click(sender, e);
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmNhanVien_FormClosed(object sender, FormClosedEventArgs e)
@@ -62,6 +61,7 @@ namespace QuanLyNhanSu.GUI
         private void btnThem_Click(object sender, EventArgs e)
         {
             Clear();
+            txtMaNV.Text = (db.Database.SqlQuery<int>("SELECT TOP 1 MAX(MaNhanVien) FROM NHANVIEN").SingleOrDefault() + 1).ToString();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace QuanLyNhanSu.GUI
                 NHANVIEN nv = new NHANVIEN();
 
                 //gán giá trị từ textbox vào các biến
-                nv.MaNhanVien = int.Parse(txtMaNV.Text);
+                //nv.MaNhanVien = int.Parse(txtMaNV.Text);
                 nv.TenNhanVien = txtTenNV.Text;
                 nv.NgaySinh = dtpNgaySinh.Value;
                 nv.GioiTinh = cbxGioiTinh.Text;
@@ -148,21 +148,15 @@ namespace QuanLyNhanSu.GUI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            //hỏi lại có chắc chắn muốn xóa k
+            //hỏi lại có chắc chắn muốn xóa hay không
             if (DialogResult.OK == MessageBox.Show("Xóa bản ghi hiện tại sẽ làm thay đổi hoặc xóa các bản ghi liên kết!\nBạn có muốn tiếp tục không?"
                 , "Cảnh báo xóa!", MessageBoxButtons.OKCancel))
             {
-                // muốn xóa thằng nhân viên này thì phải xóa các bản ghi dùng mã nhân viên làm khóa chính (trong bảng khác)
-                // và thay đổi các bản ghi dùng mã nhân viên làm khóa phụ (có thể update cho nó = null, hoặc nếu xóa luôn nếu thích)
-
-                // trong bảng nhân viên thì có bảng hóa đơn + tài khoản lấy mã nhân viên làm khóa phụ
-                // có thể sửa thành null các bản ghi dùng mã nhân viên, hoặc xóa cmn đi nếu cần
-
-                db.Database.ExecuteSqlCommand("UPDATE BAOHIEMXAHOI SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
                 db.Database.ExecuteSqlCommand("UPDATE BAOHIEMYTE SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
-                db.Database.ExecuteSqlCommand("UPDATE PHANCONG SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
-                db.Database.ExecuteSqlCommand("UPDATE THANNHAN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
-                db.Database.ExecuteSqlCommand("UPDATE NHANVIEN SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("UPDATE BAOHIEMXAHOI SET MaNhanVien = NULL WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("DELETE PHANCONG WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("DELETE THANNHAN WHERE MaNhanVien = " + txtMaNV.Text);
+                db.Database.ExecuteSqlCommand("DELETE NHANVIEN WHERE MaNhanVien = " + txtMaNV.Text);
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);

@@ -128,6 +128,7 @@
             this.Controls.Add(this.textBoxPass);
             this.Name = "frmLogin";
             this.Text = "Chương trình quản lý nhân sự";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -8,7 +8,7 @@ namespace Thuong_QuanLyNhanSu.Models
     public partial class QuanLyNhanVien : DbContext
     {
         public QuanLyNhanVien()
-            : base("name=QuanLyNhanVien1")
+            : base("name=QuanLyNhanVien")
         {
         }
 

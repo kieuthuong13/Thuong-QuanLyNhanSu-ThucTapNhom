@@ -39,24 +39,24 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.LbBHXH = new System.Windows.Forms.Label();
             this.LbBHYT = new System.Windows.Forms.Label();
-            this.LbThanNhan = new System.Windows.Forms.Label();
+            this.picNhanVien = new System.Windows.Forms.PictureBox();
             this.picBHXH = new System.Windows.Forms.PictureBox();
             this.picBHYT = new System.Windows.Forms.PictureBox();
-            this.picThanNhan = new System.Windows.Forms.PictureBox();
-            this.picPhanCong = new System.Windows.Forms.PictureBox();
-            this.picDuAn = new System.Windows.Forms.PictureBox();
             this.picPhongBan = new System.Windows.Forms.PictureBox();
-            this.picNhanVien = new System.Windows.Forms.PictureBox();
+            this.picDuAn = new System.Windows.Forms.PictureBox();
+            this.picPhanCong = new System.Windows.Forms.PictureBox();
+            this.LbThanNhan = new System.Windows.Forms.Label();
+            this.picThanNhan = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBHXH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBHYT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picThanNhan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPhanCong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDuAn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhongBan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDuAn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhanCong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThanNhan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,7 +80,7 @@
             this.LbPhanCong.Size = new System.Drawing.Size(74, 16);
             this.LbPhanCong.TabIndex = 3;
             this.LbPhanCong.Text = "Phân Công";
-            this.LbPhanCong.Click += new System.EventHandler(this.LbPhanCong_Click);
+            this.LbPhanCong.Click += new System.EventHandler(this.picPhanCong_Click);
             // 
             // LbDangXuat
             // 
@@ -112,7 +112,7 @@
             this.LbDuAn.Size = new System.Drawing.Size(44, 16);
             this.LbDuAn.TabIndex = 6;
             this.LbDuAn.Text = "Dự Án";
-            this.LbDuAn.Click += new System.EventHandler(this.LbDuAn_Click);
+            this.LbDuAn.Click += new System.EventHandler(this.picDuAn_Click);
             // 
             // groupBox1
             // 
@@ -135,7 +135,7 @@
             this.LbPhongBan.Size = new System.Drawing.Size(74, 16);
             this.LbPhongBan.TabIndex = 5;
             this.LbPhongBan.Text = "Phòng Ban";
-            this.LbPhongBan.Click += new System.EventHandler(this.LbPhongBan_Click);
+            this.LbPhongBan.Click += new System.EventHandler(this.picPhongBan_Click);
             // 
             // LbNhanVien
             // 
@@ -146,7 +146,7 @@
             this.LbNhanVien.Size = new System.Drawing.Size(70, 16);
             this.LbNhanVien.TabIndex = 4;
             this.LbNhanVien.Text = "Nhân Viên";
-            this.LbNhanVien.Click += new System.EventHandler(this.LbNhanVien_Click);
+            this.LbNhanVien.Click += new System.EventHandler(this.picNhanVien_Click);
             // 
             // groupBox2
             // 
@@ -180,7 +180,7 @@
             this.LbBHXH.Size = new System.Drawing.Size(111, 16);
             this.LbBHXH.TabIndex = 14;
             this.LbBHXH.Text = "Bảo Hiểm Xã Hội";
-            this.LbBHXH.Click += new System.EventHandler(this.LbBHXH_Click);
+            this.LbBHXH.Click += new System.EventHandler(this.picBHXH_Click);
             // 
             // LbBHYT
             // 
@@ -191,18 +191,19 @@
             this.LbBHYT.Size = new System.Drawing.Size(100, 16);
             this.LbBHYT.TabIndex = 13;
             this.LbBHYT.Text = "Bảo Hiểm Y Tế";
-            this.LbBHYT.Click += new System.EventHandler(this.LbBHYT_Click);
+            this.LbBHYT.Click += new System.EventHandler(this.picBHYT_Click);
             // 
-            // LbThanNhan
+            // picNhanVien
             // 
-            this.LbThanNhan.AutoSize = true;
-            this.LbThanNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbThanNhan.Location = new System.Drawing.Point(16, 437);
-            this.LbThanNhan.Name = "LbThanNhan";
-            this.LbThanNhan.Size = new System.Drawing.Size(74, 16);
-            this.LbThanNhan.TabIndex = 10;
-            this.LbThanNhan.Text = "Thân Nhân";
-            this.LbThanNhan.Click += new System.EventHandler(this.LbThanNhan_Click);
+            this.picNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picNhanVien.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.nhanvien;
+            this.picNhanVien.Location = new System.Drawing.Point(11, 0);
+            this.picNhanVien.Name = "picNhanVien";
+            this.picNhanVien.Size = new System.Drawing.Size(85, 69);
+            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picNhanVien.TabIndex = 0;
+            this.picNhanVien.TabStop = false;
+            this.picNhanVien.Click += new System.EventHandler(this.picNhanVien_Click);
             // 
             // picBHXH
             // 
@@ -226,28 +227,17 @@
             this.picBHYT.TabStop = false;
             this.picBHYT.Click += new System.EventHandler(this.picBHYT_Click);
             // 
-            // picThanNhan
+            // picPhongBan
             // 
-            this.picThanNhan.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.thannhan;
-            this.picThanNhan.Location = new System.Drawing.Point(10, 365);
-            this.picThanNhan.Name = "picThanNhan";
-            this.picThanNhan.Size = new System.Drawing.Size(85, 69);
-            this.picThanNhan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picThanNhan.TabIndex = 8;
-            this.picThanNhan.TabStop = false;
-            this.picThanNhan.Click += new System.EventHandler(this.picThanNhan_Click);
-            // 
-            // picPhanCong
-            // 
-            this.picPhanCong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPhanCong.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.duann;
-            this.picPhanCong.Location = new System.Drawing.Point(11, 274);
-            this.picPhanCong.Name = "picPhanCong";
-            this.picPhanCong.Size = new System.Drawing.Size(85, 69);
-            this.picPhanCong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPhanCong.TabIndex = 3;
-            this.picPhanCong.TabStop = false;
-            this.picPhanCong.Click += new System.EventHandler(this.picPhanCong_Click);
+            this.picPhongBan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPhongBan.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.phongban;
+            this.picPhongBan.Location = new System.Drawing.Point(11, 91);
+            this.picPhongBan.Name = "picPhongBan";
+            this.picPhongBan.Size = new System.Drawing.Size(85, 69);
+            this.picPhongBan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPhongBan.TabIndex = 1;
+            this.picPhongBan.TabStop = false;
+            this.picPhongBan.Click += new System.EventHandler(this.picPhongBan_Click);
             // 
             // picDuAn
             // 
@@ -261,29 +251,39 @@
             this.picDuAn.TabStop = false;
             this.picDuAn.Click += new System.EventHandler(this.picDuAn_Click);
             // 
-            // picPhongBan
+            // picPhanCong
             // 
-            this.picPhongBan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPhongBan.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.phongban;
-            this.picPhongBan.Location = new System.Drawing.Point(11, 91);
-            this.picPhongBan.Name = "picPhongBan";
-            this.picPhongBan.Size = new System.Drawing.Size(85, 69);
-            this.picPhongBan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPhongBan.TabIndex = 1;
-            this.picPhongBan.TabStop = false;
-            this.picPhongBan.Click += new System.EventHandler(this.picPhongBan_Click);
+            this.picPhanCong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPhanCong.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.duann;
+            this.picPhanCong.Location = new System.Drawing.Point(11, 274);
+            this.picPhanCong.Name = "picPhanCong";
+            this.picPhanCong.Size = new System.Drawing.Size(85, 69);
+            this.picPhanCong.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPhanCong.TabIndex = 3;
+            this.picPhanCong.TabStop = false;
+            this.picPhanCong.Click += new System.EventHandler(this.picPhanCong_Click);
             // 
-            // picNhanVien
+            // LbThanNhan
             // 
-            this.picNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picNhanVien.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.nhanvien;
-            this.picNhanVien.Location = new System.Drawing.Point(11, 0);
-            this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(85, 69);
-            this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picNhanVien.TabIndex = 0;
-            this.picNhanVien.TabStop = false;
-            this.picNhanVien.Click += new System.EventHandler(this.picNhanVien_Click);
+            this.LbThanNhan.AutoSize = true;
+            this.LbThanNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbThanNhan.Location = new System.Drawing.Point(16, 437);
+            this.LbThanNhan.Name = "LbThanNhan";
+            this.LbThanNhan.Size = new System.Drawing.Size(74, 16);
+            this.LbThanNhan.TabIndex = 10;
+            this.LbThanNhan.Text = "Thân Nhân";
+            this.LbThanNhan.Click += new System.EventHandler(this.picThanNhan_Click);
+            // 
+            // picThanNhan
+            // 
+            this.picThanNhan.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.thannhan;
+            this.picThanNhan.Location = new System.Drawing.Point(10, 365);
+            this.picThanNhan.Name = "picThanNhan";
+            this.picThanNhan.Size = new System.Drawing.Size(85, 69);
+            this.picThanNhan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picThanNhan.TabIndex = 8;
+            this.picThanNhan.TabStop = false;
+            this.picThanNhan.Click += new System.EventHandler(this.picThanNhan_Click);
             // 
             // pictureBox1
             // 
@@ -306,18 +306,19 @@
             this.Name = "frmMainNV";
             this.Text = "Quản lý nhân viên";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMainNV_FormClosed);
+            this.Load += new System.EventHandler(this.frmMainNV_Load);
             this.SizeChanged += new System.EventHandler(this.frmMainNV_SizeChanged);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBHXH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBHYT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picThanNhan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPhanCong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDuAn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPhongBan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDuAn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPhanCong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picThanNhan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

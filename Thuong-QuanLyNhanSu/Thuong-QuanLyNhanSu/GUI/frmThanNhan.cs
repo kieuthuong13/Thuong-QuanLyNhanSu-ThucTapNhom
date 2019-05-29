@@ -27,13 +27,13 @@ namespace QuanLyNhanSu.GUI
         {
             InitializeComponent();
             //định dạng size mặc định
-            this.MaximizeBox = false;
-            this.MaximumSize = this.MinimumSize = new Size(1200, 800);
+            this.MinimumSize = new Size(1200, 800);
         }
 
         private void frmThanNhan_Load(object sender, EventArgs e)
         {
             dgvThanNhan.DataSource = db.THANNHANs.ToList();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmThanNhan_FormClosed(object sender, FormClosedEventArgs e)

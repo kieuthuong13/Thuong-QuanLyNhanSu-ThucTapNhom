@@ -199,7 +199,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmQuanLy";
-            this.Text = "QuanLy";
+            this.Text = "Quản lý";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmQuanLy_FormClosing);
             this.Load += new System.EventHandler(this.QuanLy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

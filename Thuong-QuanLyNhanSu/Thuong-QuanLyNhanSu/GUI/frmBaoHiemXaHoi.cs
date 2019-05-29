@@ -27,13 +27,13 @@ namespace QuanLyNhanSu.GUI
         {
             InitializeComponent();
             //định dạng size mặc định
-            this.MaximizeBox = false;
-            this.MaximumSize = this.MinimumSize = new Size(1200, 800);
+            this.MinimumSize = new Size(1200, 800);
         }
 
         private void frmBaoHiemXaHoi_Load(object sender, EventArgs e)
         {
             dgvBHXH.DataSource = db.BAOHIEMXAHOIs.ToList();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmBaoHiemXaHoi_FormClosed(object sender, FormClosedEventArgs e)

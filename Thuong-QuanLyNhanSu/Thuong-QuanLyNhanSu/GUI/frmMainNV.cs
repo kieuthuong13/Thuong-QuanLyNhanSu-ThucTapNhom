@@ -26,24 +26,10 @@ namespace QuanLyNhanSu.GUI
           
         }
 
-        private void LbNhanVien_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GUI.frmNhanVien t = new frmNhanVien();
-            t.Show();
-        }
-
         private void picNhanVien_Click(object sender, EventArgs e)
         {
             this.Hide();
             GUI.frmNhanVien t = new frmNhanVien();
-            t.Show();
-        }
-
-        private void LbPhongBan_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GUI.frmPhongBan t = new frmPhongBan();
             t.Show();
         }
 
@@ -75,21 +61,7 @@ namespace QuanLyNhanSu.GUI
             t.Show();
         }
 
-        private void LbPhanCong_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GUI.frmPhanCong t = new frmPhanCong();
-            t.Show();
-        }
-
         private void picThanNhan_Click(object sender, EventArgs e)
-        {
-            GUI.frmThanNhan tn = new GUI.frmThanNhan();
-            tn.Show();
-            this.Hide();
-        }
-
-        private void LbThanNhan_Click(object sender, EventArgs e)
         {
             GUI.frmThanNhan tn = new GUI.frmThanNhan();
             tn.Show();
@@ -136,13 +108,6 @@ namespace QuanLyNhanSu.GUI
             this.Hide();
         }
 
-        private void LbBHYT_Click(object sender, EventArgs e)
-        {
-            frmBaoHiemYTe yt = new frmBaoHiemYTe();
-            yt.Show();
-            this.Hide();
-        }
-
         private void picBHXH_Click(object sender, EventArgs e)
         {
             frmBaoHiemXaHoi xh = new frmBaoHiemXaHoi();
@@ -155,6 +120,18 @@ namespace QuanLyNhanSu.GUI
             frmBaoHiemXaHoi xh = new frmBaoHiemXaHoi();
             xh.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GUI.frmQuanLy val = new GUI.frmQuanLy(MyStruct.MyTableName.NHANVIEN);
+            val.Owner = this;
+            val.Show();
+        }
+
+        private void frmMainNV_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

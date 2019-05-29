@@ -25,13 +25,13 @@ namespace QuanLyNhanSu.GUI
         public frmPhanCong()
         {
             InitializeComponent();
-            this.MaximizeBox = false;
-            this.MaximumSize = this.MinimumSize = new Size(1200, 800);
+            this.MinimumSize = new Size(1200, 800);
         }
 
         private void frmPhanCong_Load(object sender, EventArgs e)
         {
             this.dgvPhanCong.DataSource = db.PHANCONGs.ToList();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmPhanCong_FormClosed(object sender, FormClosedEventArgs e)

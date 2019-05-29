@@ -78,5 +78,10 @@ namespace QuanLyNhanSu.GUI
                 this.btnLogin_Click(sender, e);
             }
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }
