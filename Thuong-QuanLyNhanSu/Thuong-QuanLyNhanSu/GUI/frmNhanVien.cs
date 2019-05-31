@@ -89,7 +89,7 @@ namespace QuanLyNhanSu.GUI
                 db.SaveChanges();
                 MessageBox.Show("Thêm dữ liệu nhân viên thành công!");
 
-                btnLamMoi_Click(sender, e);
+                //btnLamMoi_Click(sender, e);
             }
             catch (Exception)
             {
@@ -97,6 +97,7 @@ namespace QuanLyNhanSu.GUI
                 return;
             }
         }
+
 
         private void dgvNhanVien_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
@@ -220,6 +221,44 @@ namespace QuanLyNhanSu.GUI
                 this.txtMaPB.Focus();
                 this.txtLuong.Select();
                // txtLuong_KeyDown(sender, new KeyEventArgs(new Keys()));
+            }
+        }
+
+        private bool Find(string strSearch)
+        {
+            for (int j = 0; j < this.dgvNhanVien.ColumnCount; ++j)
+            {
+                for (int i = 0; i < this.dgvNhanVien.RowCount; ++i)
+                {
+                    try
+                    {
+                        if (this.dgvNhanVien.Rows[i].Cells[j].Value.ToString() == strSearch)
+                        {
+                            //dataGridView1.Rows[row].Selected = true;
+                            this.dgvNhanVien.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            return true;
+                        }
+                        if (3 <= j && j <= 7)
+                        {
+                            j = 7;
+                            break;
+                        }
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+
+                }
+            }
+            return false;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(this.txtTimKiem.Text))
+            {
+                Find(this.txtTimKiem.Text);
             }
         }
     }

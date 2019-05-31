@@ -141,5 +141,43 @@ namespace QuanLyNhanSu.GUI
                 Clear();
             }
         }
+
+        private bool Find(string strSearch)
+        {
+            for (int j = 0; j < this.dgvThanNhan.ColumnCount; ++j)
+            {
+                for (int i = 0; i < this.dgvThanNhan.RowCount; ++i)
+                {
+                    try
+                    {
+                        if (this.dgvThanNhan.Rows[i].Cells[j].Value.ToString() == strSearch)
+                        {
+                            //dataGridView1.Rows[row].Selected = true;
+                            this.dgvThanNhan.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            return true;
+                        }
+                        if (3 <= j && j <= 7)
+                        {
+                            j = 7;
+                            break;
+                        }
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+
+                }
+            }
+            return false;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(this.txtTimKiem.Text))
+            {
+                Find(this.txtTimKiem.Text);
+            }
+        }
     }
 }

@@ -30,7 +30,7 @@ namespace QuanLyNhanSu.GUI
      
         private void frmPhongBan_Load(object sender, EventArgs e)
         {
-            this.dgvNhanVien.DataSource = db.PHONGBANs.ToList();
+            this.dgvPhongBan.DataSource = db.PHONGBANs.ToList();
             this.WindowState = FormWindowState.Maximized;
         }
         
@@ -50,7 +50,7 @@ namespace QuanLyNhanSu.GUI
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            dgvNhanVien.DataSource = db.PHONGBANs.ToList();
+            dgvPhongBan.DataSource = db.PHONGBANs.ToList();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace QuanLyNhanSu.GUI
                 PHONGBAN pb = new PHONGBAN();
 
                 //gán giá trị từ textbox vào các biến
-                //pb.MaPhongBan = int.Parse(txtMaPB.Text);
+                pb.MaPhongBan = int.Parse(txtMaPB.Text);
                 pb.TenPhongBan = txtTenPB.Text;
                 pb.NgayNhanChuc = dtpNgayNC.Value;
                 pb.DiaDiem = txtDiaDiem.Text;
@@ -89,7 +89,7 @@ namespace QuanLyNhanSu.GUI
             }
         }
 
-        private void dgvNhanVien_RowEnter(object sender, DataGridViewCellEventArgs e)
+        private void dgvPhongBan_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             //cái này để xử lý nếu mình click vào một ô trong datagridview
             try
@@ -97,25 +97,25 @@ namespace QuanLyNhanSu.GUI
                 //xét dòng vừa click vào, hoặc vừa chọn vào:
                 //cái này gán vào textboc
                 //if để xét nếu ô = null
-                if (dgvNhanVien.Rows[e.RowIndex].Cells["MaPhongBan"].Value != null)
+                if (dgvPhongBan.Rows[e.RowIndex].Cells["MaPhongBan"].Value != null)
                 {
-                    txtMaPB.Text = dgvNhanVien.Rows[e.RowIndex].Cells["MaPhongBan"].Value.ToString();
+                    txtMaPB.Text = dgvPhongBan.Rows[e.RowIndex].Cells["MaPhongBan"].Value.ToString();
                 }
-                if (dgvNhanVien.Rows[e.RowIndex].Cells["TenPhongBan"].Value != null)
+                if (dgvPhongBan.Rows[e.RowIndex].Cells["TenPhongBan"].Value != null)
                 {
-                    txtTenPB.Text = dgvNhanVien.Rows[e.RowIndex].Cells["TenPhongBan"].Value.ToString();
+                    txtTenPB.Text = dgvPhongBan.Rows[e.RowIndex].Cells["TenPhongBan"].Value.ToString();
                 }
-                if (dgvNhanVien.Rows[e.RowIndex].Cells["MaTruongPhong"].Value != null)
+                if (dgvPhongBan.Rows[e.RowIndex].Cells["MaTruongPhong"].Value != null)
                 {
-                    txtMaTP.Text = dgvNhanVien.Rows[e.RowIndex].Cells["MaTruongPhong"].Value.ToString();
+                    txtMaTP.Text = dgvPhongBan.Rows[e.RowIndex].Cells["MaTruongPhong"].Value.ToString();
                 }
-                if (dgvNhanVien.Rows[e.RowIndex].Cells["DiaDiem"].Value != null)
+                if (dgvPhongBan.Rows[e.RowIndex].Cells["DiaDiem"].Value != null)
                 {
-                    txtDiaDiem.Text = dgvNhanVien.Rows[e.RowIndex].Cells["DiaDiem"].Value.ToString();
+                    txtDiaDiem.Text = dgvPhongBan.Rows[e.RowIndex].Cells["DiaDiem"].Value.ToString();
                 }
-                if (dgvNhanVien.Rows[e.RowIndex].Cells["NgayNhanChuc"].Value != null)
+                if (dgvPhongBan.Rows[e.RowIndex].Cells["NgayNhanChuc"].Value != null)
                 {
-                    dtpNgayNC.Value = DateTime.Parse(dgvNhanVien.Rows[e.RowIndex].Cells["NgayNhanChuc"].Value.ToString());
+                    dtpNgayNC.Value = DateTime.Parse(dgvPhongBan.Rows[e.RowIndex].Cells["NgayNhanChuc"].Value.ToString());
                 }
             }
             catch (Exception)
@@ -143,6 +143,44 @@ namespace QuanLyNhanSu.GUI
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);
+            }
+        }
+
+        private bool Find(string strSearch)
+        {
+            for (int j = 0; j < this.dgvPhongBan.ColumnCount; ++j)
+            {
+                for (int i = 0; i < this.dgvPhongBan.RowCount; ++i)
+                {
+                    try
+                    {
+                        if (this.dgvPhongBan.Rows[i].Cells[j].Value.ToString() == strSearch)
+                        {
+                            //dataGridView1.Rows[row].Selected = true;
+                            this.dgvPhongBan.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            return true;
+                        }
+                        if (3 <= j && j <= 7)
+                        {
+                            j = 7;
+                            break;
+                        }
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+
+                }
+            }
+            return false;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(this.txtTimKiem.Text))
+            {
+                Find(this.txtTimKiem.Text);
             }
         }
     }

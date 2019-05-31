@@ -47,9 +47,9 @@
             this.txtMaTP = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
-            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.dgvPhongBan = new System.Windows.Forms.DataGridView();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -246,6 +246,7 @@
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnLamMoi
             // 
@@ -263,17 +264,17 @@
             this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
-            // dgvNhanVien
+            // dgvPhongBan
             // 
-            this.dgvNhanVien.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhanVien.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvNhanVien.Location = new System.Drawing.Point(453, 187);
-            this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(750, 404);
-            this.dgvNhanVien.TabIndex = 145;
-            this.dgvNhanVien.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_RowEnter);
+            this.dgvPhongBan.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvPhongBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPhongBan.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.dgvPhongBan.Location = new System.Drawing.Point(453, 187);
+            this.dgvPhongBan.Name = "dgvPhongBan";
+            this.dgvPhongBan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPhongBan.Size = new System.Drawing.Size(750, 404);
+            this.dgvPhongBan.TabIndex = 145;
+            this.dgvPhongBan.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhongBan_RowEnter);
             // 
             // txtTimKiem
             // 
@@ -292,7 +293,7 @@
             this.ClientSize = new System.Drawing.Size(1297, 606);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.btnLamMoi);
-            this.Controls.Add(this.dgvNhanVien);
+            this.Controls.Add(this.dgvPhongBan);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnThoat);
@@ -314,7 +315,7 @@
             this.Text = "Phòng Ban";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPhongBan_FormClosed);
             this.Load += new System.EventHandler(this.frmPhongBan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,7 +340,7 @@
         private System.Windows.Forms.TextBox txtMaTP;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnLamMoi;
-        private System.Windows.Forms.DataGridView dgvNhanVien;
+        private System.Windows.Forms.DataGridView dgvPhongBan;
         private System.Windows.Forms.TextBox txtTimKiem;
     }
 }

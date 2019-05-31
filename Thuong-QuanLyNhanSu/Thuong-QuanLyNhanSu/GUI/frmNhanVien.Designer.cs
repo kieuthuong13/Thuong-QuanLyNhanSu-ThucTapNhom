@@ -51,10 +51,10 @@
             this.txtMaNGS = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
-            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.txtLuong = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.dgvNhanVien = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
@@ -301,6 +301,7 @@
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnLamMoi
             // 
@@ -317,22 +318,6 @@
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            // 
-            // dgvNhanVien
-            // 
-            this.dgvNhanVien.AllowUserToAddRows = false;
-            this.dgvNhanVien.AllowUserToDeleteRows = false;
-            this.dgvNhanVien.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNhanVien.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvNhanVien.Location = new System.Drawing.Point(368, 154);
-            this.dgvNhanVien.MultiSelect = false;
-            this.dgvNhanVien.Name = "dgvNhanVien";
-            this.dgvNhanVien.ReadOnly = true;
-            this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvNhanVien.Size = new System.Drawing.Size(831, 407);
-            this.dgvNhanVien.TabIndex = 168;
-            this.dgvNhanVien.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_RowEnter);
             // 
             // txtTimKiem
             // 
@@ -359,6 +344,17 @@
             this.label7.TabIndex = 172;
             this.label7.Text = "Lương";
             // 
+            // dgvNhanVien
+            // 
+            this.dgvNhanVien.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhanVien.Location = new System.Drawing.Point(368, 156);
+            this.dgvNhanVien.Name = "dgvNhanVien";
+            this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvNhanVien.Size = new System.Drawing.Size(831, 414);
+            this.dgvNhanVien.TabIndex = 174;
+            this.dgvNhanVien.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhanVien_RowEnter);
+            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,11 +363,11 @@
             this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources.hinh_nen_3d_dep_cho_dien_thoai_131;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1210, 622);
+            this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.txtLuong);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.btnLamMoi);
-            this.Controls.Add(this.dgvNhanVien);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnThoat);
@@ -427,9 +423,9 @@
         private System.Windows.Forms.TextBox txtMaNGS;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnLamMoi;
-        private System.Windows.Forms.DataGridView dgvNhanVien;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.TextBox txtLuong;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dgvNhanVien;
     }
 }

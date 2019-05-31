@@ -68,7 +68,7 @@ namespace QuanLyNhanSu.GUI
                 DUAN da = new DUAN();
                 //gán giá trị từ textbox vào các biến
 
-                //da.MaDuAn = int.Parse(txtMaDA.Text);
+                da.MaDuAn = int.Parse(txtMaDA.Text);
                 da.TenDuAn = txtTenDA.Text;
                 da.DiaDiem = txtDiaDiem.Text;
                 da.MaPhongBan = int.Parse(txtMaPB.Text);
@@ -144,6 +144,44 @@ namespace QuanLyNhanSu.GUI
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);
+            }
+        }
+
+        private bool Find(string strSearch)
+        {
+            for (int j = 0; j < this.dgvDuAn.ColumnCount; ++j)
+            {
+                for (int i = 0; i < this.dgvDuAn.RowCount; ++i)
+                {
+                    try
+                    {
+                        if (this.dgvDuAn.Rows[i].Cells[j].Value.ToString() == strSearch)
+                        {
+                            //dataGridView1.Rows[row].Selected = true;
+                            this.dgvDuAn.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            return true;
+                        }
+                        if (3 <= j && j <= 7)
+                        {
+                            j = 7;
+                            break;
+                        }
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+
+                }
+            }
+            return false;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(this.txtTimKiem.Text))
+            {
+                Find(this.txtTimKiem.Text);
             }
         }
     }

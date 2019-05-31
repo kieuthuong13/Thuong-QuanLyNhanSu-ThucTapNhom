@@ -134,5 +134,48 @@ namespace QuanLyNhanSu.GUI
                 btnLamMoi_Click(sender, e);
             }
         }
+
+        private bool Find(string strSearch)
+        {
+            for (int j = 0; j < this.dgvPhanCong.ColumnCount; ++j)
+            {
+                for (int i = 0; i < this.dgvPhanCong.RowCount; ++i)
+                {
+                    try
+                    {
+                        if (this.dgvPhanCong.Rows[i].Cells[j].Value.ToString() == strSearch)
+                        {
+                            //dataGridView1.Rows[row].Selected = true;
+                            this.dgvPhanCong.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            return true;
+                        }
+                        if (3 <= j && j <= 7)
+                        {
+                            j = 7;
+                            break;
+                        }
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+
+                }
+            }
+            return false;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(this.txtTimKiem.Text))
+            {
+                Find(this.txtTimKiem.Text);
+            }
+
+            if(!string.IsNullOrWhiteSpace(this.txtTimKiemMaDA.Text))
+            {
+                Find(this.txtTimKiemMaDA.Text);
+            }
+        }
     }
 }

@@ -44,6 +44,7 @@
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.btnLamMoi = new System.Windows.Forms.Button();
+            this.txtTimKiemMaDA = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhanCong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -205,10 +206,11 @@
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(238, 110);
+            this.txtTimKiem.Location = new System.Drawing.Point(238, 97);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(203, 20);
             this.txtTimKiem.TabIndex = 150;
@@ -229,6 +231,13 @@
             this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
+            // txtTimKiemMaDA
+            // 
+            this.txtTimKiemMaDA.Location = new System.Drawing.Point(238, 136);
+            this.txtTimKiemMaDA.Name = "txtTimKiemMaDA";
+            this.txtTimKiemMaDA.Size = new System.Drawing.Size(203, 20);
+            this.txtTimKiemMaDA.TabIndex = 153;
+            // 
             // frmPhanCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,6 +246,7 @@
             this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources._11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1109, 514);
+            this.Controls.Add(this.txtTimKiemMaDA);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
@@ -279,5 +289,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTimKiemMaDA;
     }
 }

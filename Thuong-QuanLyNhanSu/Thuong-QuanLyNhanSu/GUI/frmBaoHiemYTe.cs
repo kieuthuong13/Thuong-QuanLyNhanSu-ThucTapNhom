@@ -69,7 +69,7 @@ namespace QuanLyNhanSu.GUI
                 BAOHIEMYTE yt = new BAOHIEMYTE();
 
                 //gán giá trị từ textbox vào các biến
-                //yt.MaBHYT = int.Parse(txtMaBHYT.Text);
+                yt.MaBHYT = int.Parse(txtMaBHYT.Text);
                 yt.NoiDangKyKCB = txtNoiDK.Text;
                 yt.SoTien = int.Parse(txtSoTien.Text);
                 yt.HieuLuc = dptHieuLuc.Value;
@@ -139,6 +139,44 @@ namespace QuanLyNhanSu.GUI
                 db.SaveChanges();
                 MessageBox.Show("Xóa bản ghi thành công!");
                 btnLamMoi_Click(sender, e);
+            }
+        }
+
+        private bool Find(string strSearch)
+        {
+            for (int j = 0; j < this.dgvBHYTe.ColumnCount; ++j)
+            {
+                for (int i = 0; i < this.dgvBHYTe.RowCount; ++i)
+                {
+                    try
+                    {
+                        if (this.dgvBHYTe.Rows[i].Cells[j].Value.ToString() == strSearch)
+                        {
+                            //dataGridView1.Rows[row].Selected = true;
+                            this.dgvBHYTe.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                            return true;
+                        }
+                        if (3 <= j && j <= 7)
+                        {
+                            j = 7;
+                            break;
+                        }
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+
+                }
+            }
+            return false;
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(this.txtTimKiem.Text))
+            {
+                Find(this.txtTimKiem.Text);
             }
         }
     }
