@@ -12,19 +12,20 @@ CREATE TABLE PHONGBAN(
 
 CREATE TABLE NHANVIEN(
 	MaNhanVien int identity primary key,
-	MaPhongBan int references PHONGBAN(MaPhongBan),
 	TenNhanVien nvarchar(100),
 	NgaySinh datetime,
 	GioiTinh nvarchar(100),
+	DiaChi nvarchar(100),
 	MaNguoiGiamSat int,
-	BacLuong int references LUONG(BacLuong),
-	DiaChi nvarchar(100))
+	MaPhongBan int references PHONGBAN(MaPhongBan),
+	Luong int,
+	)
 
 CREATE TABLE DUAN(
 	MaDuAn int identity primary key,
 	TenDuAn nvarchar(100),
-	MaPhongBan int references PHONGBAN(MaPhongBan),
 	DiaDiem nvarchar(100),
+	MaPhongBan int references PHONGBAN(MaPhongBan),
 	TongSoGio int)
 
 CREATE TABLE PHANCONG(

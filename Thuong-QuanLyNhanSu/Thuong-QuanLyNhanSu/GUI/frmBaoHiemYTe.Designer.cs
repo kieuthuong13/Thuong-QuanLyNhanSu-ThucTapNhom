@@ -58,7 +58,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(40, 85);
+            this.btnTimKiem.Location = new System.Drawing.Point(131, 75);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(99, 42);
             this.btnTimKiem.TabIndex = 213;
@@ -73,7 +73,7 @@
             this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
             this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
             this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoi.Location = new System.Drawing.Point(344, 86);
+            this.btnLamMoi.Location = new System.Drawing.Point(435, 76);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(103, 42);
             this.btnLamMoi.TabIndex = 214;
@@ -87,7 +87,7 @@
             this.dgvBHYTe.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvBHYTe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBHYTe.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvBHYTe.Location = new System.Drawing.Point(344, 144);
+            this.dgvBHYTe.Location = new System.Drawing.Point(435, 134);
             this.dgvBHYTe.Name = "dgvBHYTe";
             this.dgvBHYTe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBHYTe.Size = new System.Drawing.Size(649, 370);
@@ -96,7 +96,7 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(160, 99);
+            this.txtTimKiem.Location = new System.Drawing.Point(251, 89);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(167, 20);
             this.txtTimKiem.TabIndex = 212;
@@ -109,7 +109,7 @@
             this.btnThem.ForeColor = System.Drawing.Color.Black;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(453, 86);
+            this.btnThem.Location = new System.Drawing.Point(544, 76);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(85, 42);
             this.btnThem.TabIndex = 210;
@@ -122,7 +122,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Plum;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(904, 85);
+            this.btnThoat.Location = new System.Drawing.Point(995, 75);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(89, 42);
             this.btnThoat.TabIndex = 209;
@@ -138,7 +138,7 @@
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(737, 86);
+            this.btnLuu.Location = new System.Drawing.Point(828, 76);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(104, 42);
             this.btnLuu.TabIndex = 208;
@@ -154,7 +154,7 @@
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(635, 86);
+            this.btnXoa.Location = new System.Drawing.Point(726, 76);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(85, 42);
             this.btnXoa.TabIndex = 207;
@@ -170,7 +170,7 @@
             this.btnSua.ForeColor = System.Drawing.Color.Black;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(544, 86);
+            this.btnSua.Location = new System.Drawing.Point(635, 76);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 42);
             this.btnSua.TabIndex = 206;
@@ -180,7 +180,7 @@
             // 
             // txtMaNV
             // 
-            this.txtMaNV.Location = new System.Drawing.Point(140, 392);
+            this.txtMaNV.Location = new System.Drawing.Point(231, 382);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(191, 20);
             this.txtMaNV.TabIndex = 205;
@@ -190,7 +190,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Plum;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 391);
+            this.label2.Location = new System.Drawing.Point(127, 381);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 19);
             this.label2.TabIndex = 196;
@@ -201,7 +201,7 @@
             this.LBNoiDK.AutoSize = true;
             this.LBNoiDK.BackColor = System.Drawing.Color.Plum;
             this.LBNoiDK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBNoiDK.Location = new System.Drawing.Point(36, 260);
+            this.LBNoiDK.Location = new System.Drawing.Point(127, 250);
             this.LBNoiDK.Name = "LBNoiDK";
             this.LBNoiDK.Size = new System.Drawing.Size(91, 19);
             this.LBNoiDK.TabIndex = 197;
@@ -209,7 +209,7 @@
             // 
             // txtNoiDK
             // 
-            this.txtNoiDK.Location = new System.Drawing.Point(140, 261);
+            this.txtNoiDK.Location = new System.Drawing.Point(231, 251);
             this.txtNoiDK.Name = "txtNoiDK";
             this.txtNoiDK.Size = new System.Drawing.Size(191, 20);
             this.txtNoiDK.TabIndex = 198;
@@ -219,7 +219,7 @@
             this.LbHieuLuc.AutoSize = true;
             this.LbHieuLuc.BackColor = System.Drawing.Color.Plum;
             this.LbHieuLuc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbHieuLuc.Location = new System.Drawing.Point(36, 347);
+            this.LbHieuLuc.Location = new System.Drawing.Point(127, 337);
             this.LbHieuLuc.Name = "LbHieuLuc";
             this.LbHieuLuc.Size = new System.Drawing.Size(66, 19);
             this.LbHieuLuc.TabIndex = 201;
@@ -227,7 +227,7 @@
             // 
             // txtMaBHYT
             // 
-            this.txtMaBHYT.Location = new System.Drawing.Point(140, 218);
+            this.txtMaBHYT.Location = new System.Drawing.Point(231, 208);
             this.txtMaBHYT.Name = "txtMaBHYT";
             this.txtMaBHYT.Size = new System.Drawing.Size(191, 20);
             this.txtMaBHYT.TabIndex = 216;
@@ -237,7 +237,7 @@
             this.LbMaBHYT.AutoSize = true;
             this.LbMaBHYT.BackColor = System.Drawing.Color.Plum;
             this.LbMaBHYT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMaBHYT.Location = new System.Drawing.Point(36, 217);
+            this.LbMaBHYT.Location = new System.Drawing.Point(127, 207);
             this.LbMaBHYT.Name = "LbMaBHYT";
             this.LbMaBHYT.Size = new System.Drawing.Size(88, 19);
             this.LbMaBHYT.TabIndex = 215;
@@ -248,7 +248,7 @@
             this.LbSoTien.AutoSize = true;
             this.LbSoTien.BackColor = System.Drawing.Color.Plum;
             this.LbSoTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbSoTien.Location = new System.Drawing.Point(36, 303);
+            this.LbSoTien.Location = new System.Drawing.Point(127, 293);
             this.LbSoTien.Name = "LbSoTien";
             this.LbSoTien.Size = new System.Drawing.Size(55, 19);
             this.LbSoTien.TabIndex = 217;
@@ -256,7 +256,7 @@
             // 
             // txtSoTien
             // 
-            this.txtSoTien.Location = new System.Drawing.Point(140, 304);
+            this.txtSoTien.Location = new System.Drawing.Point(231, 294);
             this.txtSoTien.Name = "txtSoTien";
             this.txtSoTien.Size = new System.Drawing.Size(191, 20);
             this.txtSoTien.TabIndex = 218;
@@ -264,7 +264,7 @@
             // dptHieuLuc
             // 
             this.dptHieuLuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dptHieuLuc.Location = new System.Drawing.Point(140, 345);
+            this.dptHieuLuc.Location = new System.Drawing.Point(231, 335);
             this.dptHieuLuc.Name = "dptHieuLuc";
             this.dptHieuLuc.Size = new System.Drawing.Size(191, 20);
             this.dptHieuLuc.TabIndex = 219;
@@ -273,9 +273,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources.hoacuc;
+            this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources.hoacuc3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1013, 542);
+            this.ClientSize = new System.Drawing.Size(1162, 542);
             this.Controls.Add(this.dptHieuLuc);
             this.Controls.Add(this.LbSoTien);
             this.Controls.Add(this.txtSoTien);

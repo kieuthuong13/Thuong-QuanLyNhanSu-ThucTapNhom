@@ -162,5 +162,65 @@ namespace QuanLyNhanSu.GUI
                 btnLamMoi_Click(sender, e);
             }
         }
+
+        private void txtTenNV_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.txtTenNV.Focus();
+                this.dtpNgaySinh.Select();
+                dtpNgaySinh_KeyDown(sender, new KeyEventArgs(new Keys()));
+            }
+        }
+
+        private void dtpNgaySinh_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.dtpNgaySinh.Focus();
+                this.cbxGioiTinh.Select();
+                cbxGioiTinh_KeyDown(sender, new KeyEventArgs(new Keys()));
+            }
+        }
+
+        private void cbxGioiTinh_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.cbxGioiTinh.Focus();
+                this.txtDiaChi.Select();
+                txtDiaChi_KeyDown(sender, new KeyEventArgs(new Keys()));
+            }
+        }
+
+        private void txtDiaChi_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.txtDiaChi.Focus();
+                this.txtMaNGS.Select();
+                txtMaNGS_KeyDown(sender, new KeyEventArgs(new Keys()));
+            }
+        }
+
+        private void txtMaNGS_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.txtMaNGS.Focus();
+                this.txtMaPB.Select();
+                txtMaPB_KeyDown(sender, new KeyEventArgs(new Keys()));
+            }
+        }
+
+        private void txtMaPB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.txtMaPB.Focus();
+                this.txtLuong.Select();
+               // txtLuong_KeyDown(sender, new KeyEventArgs(new Keys()));
+            }
+        }
     }
 }

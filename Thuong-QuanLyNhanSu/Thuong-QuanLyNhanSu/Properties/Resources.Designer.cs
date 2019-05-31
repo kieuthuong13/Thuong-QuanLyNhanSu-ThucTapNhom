@@ -63,6 +63,26 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1__bóng_trăng {
+            get {
+                object obj = ResourceManager.GetObject("1.-bóng-trăng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _11 {
+            get {
+                object obj = ResourceManager.GetObject("11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anh1 {
             get {
                 object obj = ResourceManager.GetObject("anh1", resourceCulture);
@@ -143,6 +163,16 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete {
+            get {
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap duan {
             get {
                 object obj = ResourceManager.GetObject("duan", resourceCulture);
@@ -163,6 +193,26 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hinh_nen_3d_dep_cho_dien_thoai_13 {
+            get {
+                object obj = ResourceManager.GetObject("hinh-nen-3d-dep-cho-dien-thoai-13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_nen_3d_dep_cho_dien_thoai_131 {
+            get {
+                object obj = ResourceManager.GetObject("hinh-nen-3d-dep-cho-dien-thoai-131", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hoacuc {
             get {
                 object obj = ResourceManager.GetObject("hoacuc", resourceCulture);
@@ -176,6 +226,26 @@ namespace Thuong_QuanLyNhanSu.Properties {
         internal static System.Drawing.Bitmap hoacuc1 {
             get {
                 object obj = ResourceManager.GetObject("hoacuc1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hoacuc2 {
+            get {
+                object obj = ResourceManager.GetObject("hoacuc2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hoacuc3 {
+            get {
+                object obj = ResourceManager.GetObject("hoacuc3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +286,26 @@ namespace Thuong_QuanLyNhanSu.Properties {
         internal static System.Drawing.Bitmap phongban {
             get {
                 object obj = ResourceManager.GetObject("phongban", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quay_lai {
+            get {
+                object obj = ResourceManager.GetObject("quay-lai", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quaylai {
+            get {
+                object obj = ResourceManager.GetObject("quaylai", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

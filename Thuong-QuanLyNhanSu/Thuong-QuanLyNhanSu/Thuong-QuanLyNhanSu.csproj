@@ -256,6 +256,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateTable_QLNV_TTN_ThuThuong.sql" />
+    <None Include="Resources\hinh-nen-3d-dep-cho-dien-thoai-131.jpg" />
+    <None Include="Resources\quaylai.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\quay-lai.jpg" />
+    <None Include="Resources\hoacuc3.jpg" />
+    <None Include="Resources\hoacuc2.jpg" />
+    <None Include="Resources\1.-bóng-trăng1.jpg" />
+    <None Include="Resources\1.-bóng-trăng.jpg" />
+    <None Include="Resources\hinh-nen-3d-dep-cho-dien-thoai-13.jpg" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

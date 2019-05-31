@@ -58,7 +58,7 @@
             this.label1.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(23, 9);
+            this.label1.Location = new System.Drawing.Point(99, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 37);
             this.label1.TabIndex = 92;
@@ -72,7 +72,7 @@
             this.btnThem.ForeColor = System.Drawing.Color.Black;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(30, 135);
+            this.btnThem.Location = new System.Drawing.Point(570, 139);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(85, 42);
             this.btnThem.TabIndex = 144;
@@ -85,9 +85,9 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(185, 197);
+            this.btnThoat.Location = new System.Drawing.Point(1112, 141);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(112, 39);
+            this.btnThoat.Size = new System.Drawing.Size(91, 39);
             this.btnThoat.TabIndex = 143;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -101,9 +101,9 @@
             this.btnLuu.ForeColor = System.Drawing.Color.Black;
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(30, 195);
+            this.btnLuu.Location = new System.Drawing.Point(871, 139);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(112, 42);
+            this.btnLuu.Size = new System.Drawing.Size(101, 42);
             this.btnLuu.TabIndex = 142;
             this.btnLuu.Text = "Lưu Mới";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -117,7 +117,7 @@
             this.btnXoa.ForeColor = System.Drawing.Color.Black;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(212, 135);
+            this.btnXoa.Location = new System.Drawing.Point(770, 139);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(85, 42);
             this.btnXoa.TabIndex = 141;
@@ -133,7 +133,7 @@
             this.btnSua.ForeColor = System.Drawing.Color.Black;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(121, 135);
+            this.btnSua.Location = new System.Drawing.Point(670, 139);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 42);
             this.btnSua.TabIndex = 140;
@@ -143,7 +143,7 @@
             // 
             // txtMaPB
             // 
-            this.txtMaPB.Location = new System.Drawing.Point(162, 301);
+            this.txtMaPB.Location = new System.Drawing.Point(238, 305);
             this.txtMaPB.Name = "txtMaPB";
             this.txtMaPB.Size = new System.Drawing.Size(191, 20);
             this.txtMaPB.TabIndex = 139;
@@ -153,7 +153,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.SkyBlue;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 300);
+            this.label2.Location = new System.Drawing.Point(102, 304);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 19);
             this.label2.TabIndex = 130;
@@ -164,7 +164,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.SkyBlue;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 334);
+            this.label3.Location = new System.Drawing.Point(102, 338);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 19);
             this.label3.TabIndex = 131;
@@ -172,7 +172,7 @@
             // 
             // txtTenPB
             // 
-            this.txtTenPB.Location = new System.Drawing.Point(162, 335);
+            this.txtTenPB.Location = new System.Drawing.Point(238, 339);
             this.txtTenPB.Name = "txtTenPB";
             this.txtTenPB.Size = new System.Drawing.Size(191, 20);
             this.txtTenPB.TabIndex = 132;
@@ -182,7 +182,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.SkyBlue;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 372);
+            this.label4.Location = new System.Drawing.Point(102, 376);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 19);
             this.label4.TabIndex = 133;
@@ -193,7 +193,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.SkyBlue;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(26, 406);
+            this.label6.Location = new System.Drawing.Point(102, 410);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 19);
             this.label6.TabIndex = 134;
@@ -201,7 +201,7 @@
             // 
             // txtDiaDiem
             // 
-            this.txtDiaDiem.Location = new System.Drawing.Point(162, 407);
+            this.txtDiaDiem.Location = new System.Drawing.Point(238, 411);
             this.txtDiaDiem.Name = "txtDiaDiem";
             this.txtDiaDiem.Size = new System.Drawing.Size(191, 20);
             this.txtDiaDiem.TabIndex = 135;
@@ -211,7 +211,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.SkyBlue;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(26, 443);
+            this.label8.Location = new System.Drawing.Point(102, 447);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 19);
             this.label8.TabIndex = 136;
@@ -220,14 +220,14 @@
             // dtpNgayNC
             // 
             this.dtpNgayNC.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayNC.Location = new System.Drawing.Point(162, 370);
+            this.dtpNgayNC.Location = new System.Drawing.Point(238, 374);
             this.dtpNgayNC.Name = "dtpNgayNC";
             this.dtpNgayNC.Size = new System.Drawing.Size(191, 20);
             this.dtpNgayNC.TabIndex = 138;
             // 
             // txtMaTP
             // 
-            this.txtMaTP.Location = new System.Drawing.Point(162, 444);
+            this.txtMaTP.Location = new System.Drawing.Point(238, 448);
             this.txtMaTP.Name = "txtMaTP";
             this.txtMaTP.Size = new System.Drawing.Size(191, 20);
             this.txtMaTP.TabIndex = 137;
@@ -239,7 +239,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
             this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(1017, 135);
+            this.btnTimKiem.Location = new System.Drawing.Point(91, 139);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(99, 42);
             this.btnTimKiem.TabIndex = 147;
@@ -254,7 +254,7 @@
             this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
             this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
             this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoi.Location = new System.Drawing.Point(383, 135);
+            this.btnLamMoi.Location = new System.Drawing.Point(453, 139);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(103, 42);
             this.btnLamMoi.TabIndex = 148;
@@ -268,7 +268,7 @@
             this.dgvNhanVien.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNhanVien.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvNhanVien.Location = new System.Drawing.Point(377, 183);
+            this.dgvNhanVien.Location = new System.Drawing.Point(453, 187);
             this.dgvNhanVien.Name = "dgvNhanVien";
             this.dgvNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvNhanVien.Size = new System.Drawing.Size(750, 404);
@@ -277,9 +277,9 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(739, 148);
+            this.txtTimKiem.Location = new System.Drawing.Point(238, 152);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(237, 20);
+            this.txtTimKiem.Size = new System.Drawing.Size(191, 20);
             this.txtTimKiem.TabIndex = 146;
             // 
             // frmPhongBan
@@ -289,7 +289,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources.anh1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1176, 606);
+            this.ClientSize = new System.Drawing.Size(1297, 606);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.dgvNhanVien);

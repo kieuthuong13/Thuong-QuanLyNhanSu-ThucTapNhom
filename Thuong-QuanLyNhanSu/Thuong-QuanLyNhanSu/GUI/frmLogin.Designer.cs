@@ -41,7 +41,7 @@
             // 
             this.lblTK.AutoSize = true;
             this.lblTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTK.Location = new System.Drawing.Point(295, 163);
+            this.lblTK.Location = new System.Drawing.Point(441, 209);
             this.lblTK.Name = "lblTK";
             this.lblTK.Size = new System.Drawing.Size(73, 19);
             this.lblTK.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.lblMK.AutoSize = true;
             this.lblMK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMK.Location = new System.Drawing.Point(297, 199);
+            this.lblMK.Location = new System.Drawing.Point(443, 245);
             this.lblMK.Name = "lblMK";
             this.lblMK.Size = new System.Drawing.Size(71, 19);
             this.lblMK.TabIndex = 1;
@@ -60,7 +60,7 @@
             // textBoxUser
             // 
             this.textBoxUser.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBoxUser.Location = new System.Drawing.Point(382, 162);
+            this.textBoxUser.Location = new System.Drawing.Point(528, 208);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(210, 20);
             this.textBoxUser.TabIndex = 2;
@@ -69,7 +69,7 @@
             // textBoxPass
             // 
             this.textBoxPass.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBoxPass.Location = new System.Drawing.Point(382, 198);
+            this.textBoxPass.Location = new System.Drawing.Point(528, 244);
             this.textBoxPass.Name = "textBoxPass";
             this.textBoxPass.PasswordChar = '•';
             this.textBoxPass.Size = new System.Drawing.Size(210, 20);
@@ -80,7 +80,7 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Silver;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(382, 249);
+            this.btnLogin.Location = new System.Drawing.Point(528, 295);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(104, 36);
             this.btnLogin.TabIndex = 4;
@@ -92,7 +92,7 @@
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Silver;
             this.btnCancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(492, 249);
+            this.btnCancel.Location = new System.Drawing.Point(638, 295);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(100, 36);
             this.btnCancel.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(397, 102);
+            this.label1.Location = new System.Drawing.Point(543, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 24);
             this.label1.TabIndex = 6;

@@ -118,20 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="background41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="company" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\company.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BaoHiemXaHoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BaoHiemXaHoi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="anh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anh3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="duan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\duan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="IMG_1755" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\IMG_1755.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nhanvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nhanvien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="phancong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phancong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quaylai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quaylai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thannhan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thannhan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,40 +142,64 @@
   <data name="anh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anh1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="nhanvien" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nhanvien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hoacuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoacuc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="company" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\company.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hinh-nen-3d-dep-cho-dien-thoai-13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinh-nen-3d-dep-cho-dien-thoai-13.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anh2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anh2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="top_6_hinh_anh_nha_xuong_dep_khong_the_bo_qua_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\top-6-hinh-anh-nha-xuong-dep-khong-the-bo-qua-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="phongban" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phongban.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thannhan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thannhan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="duann" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\duann.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anh3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anh3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="duan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\duan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tienluong" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tienluong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hoacuc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hoacuc1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phongban" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phongban.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hoacuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hoacuc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="quay-lai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quay-lai.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.-bóng-trăng1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anh2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anh2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_1755" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMG_1755.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hoacuc3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoacuc3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Baohiemyte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Baohiemyte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hoacuc2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoacuc2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaoHiemXaHoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BaoHiemXaHoi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="duann" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\duann.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hoacuc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hoacuc1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1.-bóng-trăng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.-bóng-trăng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="top_6_hinh_anh_nha_xuong_dep_khong_the_bo_qua_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top-6-hinh-anh-nha-xuong-dep-khong-the-bo-qua-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hinh-nen-3d-dep-cho-dien-thoai-131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinh-nen-3d-dep-cho-dien-thoai-131.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
