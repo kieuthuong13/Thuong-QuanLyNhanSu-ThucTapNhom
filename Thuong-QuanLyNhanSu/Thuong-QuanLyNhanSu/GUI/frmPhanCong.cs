@@ -171,11 +171,6 @@ namespace QuanLyNhanSu.GUI
             {
                 Find(this.txtTimKiem.Text);
             }
-
-            if(!string.IsNullOrWhiteSpace(this.txtTimKiemMaDA.Text))
-            {
-                Find(this.txtTimKiemMaDA.Text);
-            }
         }
     }
 }

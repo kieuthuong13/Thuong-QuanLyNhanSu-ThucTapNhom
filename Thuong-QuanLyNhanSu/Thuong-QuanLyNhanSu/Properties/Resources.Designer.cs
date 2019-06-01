@@ -83,6 +83,26 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_48_hot {
+            get {
+                object obj = ResourceManager.GetObject("add_48_hot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addusers {
+            get {
+                object obj = ResourceManager.GetObject("addusers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anh1 {
             get {
                 object obj = ResourceManager.GetObject("anh1", resourceCulture);
@@ -153,6 +173,16 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_f2 {
+            get {
+                object obj = ResourceManager.GetObject("cancel_f2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap company {
             get {
                 object obj = ResourceManager.GetObject("company", resourceCulture);
@@ -173,6 +203,16 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete_f2 {
+            get {
+                object obj = ResourceManager.GetObject("delete_f2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap duan {
             get {
                 object obj = ResourceManager.GetObject("duan", resourceCulture);
@@ -186,6 +226,16 @@ namespace Thuong_QuanLyNhanSu.Properties {
         internal static System.Drawing.Bitmap duann {
             get {
                 object obj = ResourceManager.GetObject("duann", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editadd_48_hot {
+            get {
+                object obj = ResourceManager.GetObject("editadd_48_hot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,6 +363,26 @@ namespace Thuong_QuanLyNhanSu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap refresh_48_hot {
+            get {
+                object obj = ResourceManager.GetObject("refresh_48_hot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_48_hot {
+            get {
+                object obj = ResourceManager.GetObject("save_48_hot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thannhan {
             get {
                 object obj = ResourceManager.GetObject("thannhan", resourceCulture);
@@ -336,6 +406,16 @@ namespace Thuong_QuanLyNhanSu.Properties {
         internal static System.Drawing.Bitmap top_6_hinh_anh_nha_xuong_dep_khong_the_bo_qua_2 {
             get {
                 object obj = ResourceManager.GetObject("top_6_hinh_anh_nha_xuong_dep_khong_the_bo_qua_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zoom_48_hot {
+            get {
+                object obj = ResourceManager.GetObject("zoom_48_hot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -256,6 +256,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateTable_QLNV_TTN_ThuThuong.sql" />
+    <None Include="Resources\refresh_48_hot.png" />
+    <None Include="Resources\zoom_48_hot.png" />
+    <None Include="Resources\delete_f2.png" />
+    <None Include="Resources\save_48_hot.png" />
+    <None Include="Resources\editadd_48_hot.png" />
+    <None Include="Resources\addusers.png" />
+    <None Include="Resources\add_48_hot.png" />
+    <None Include="Resources\cancel_f2.png" />
     <None Include="Resources\hinh-nen-3d-dep-cho-dien-thoai-131.jpg" />
     <None Include="Resources\quaylai.png" />
     <None Include="Resources\delete.png" />
