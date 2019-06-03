@@ -171,6 +171,7 @@
             this.Controls.Add(this.LoginInforGroupBox);
             this.Controls.Add(this.TitleLabel);
             this.Name = "PasswordChangingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Đổi mật khẩu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PasswordChangingForm_FormClosing);
             this.Load += new System.EventHandler(this.PasswordChangingForm_Load);

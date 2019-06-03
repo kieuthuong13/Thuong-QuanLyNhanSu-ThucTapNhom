@@ -33,7 +33,7 @@ namespace QuanLyNhanSu.GUI
         private void frmDuAn_Load(object sender, EventArgs e)
         {
             dgvDuAn.DataSource = db.DUANs.ToList();
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmDuAn_FormClosed(object sender, FormClosedEventArgs e)

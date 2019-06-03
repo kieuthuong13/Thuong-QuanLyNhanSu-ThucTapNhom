@@ -31,7 +31,7 @@ namespace QuanLyNhanSu.GUI
         private void frmPhongBan_Load(object sender, EventArgs e)
         {
             this.dgvPhongBan.DataSource = db.PHONGBANs.ToList();
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
         
         private void frmPhongBan_FormClosed(object sender, FormClosedEventArgs e)

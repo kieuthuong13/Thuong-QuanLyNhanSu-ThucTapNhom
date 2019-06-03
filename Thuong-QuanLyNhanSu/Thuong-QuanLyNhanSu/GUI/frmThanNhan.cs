@@ -33,7 +33,7 @@ namespace QuanLyNhanSu.GUI
         private void frmThanNhan_Load(object sender, EventArgs e)
         {
             dgvThanNhan.DataSource = db.THANNHANs.ToList();
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmThanNhan_FormClosed(object sender, FormClosedEventArgs e)

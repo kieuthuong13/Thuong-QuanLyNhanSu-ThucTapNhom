@@ -33,7 +33,7 @@ namespace QuanLyNhanSu.GUI
         private void frmBaoHiemYTe_Load(object sender, EventArgs e)
         {
             dgvBHYTe.DataSource = db.BAOHIEMYTEs.ToList();
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmBaoHiemYTe_FormClosed(object sender, FormClosedEventArgs e)

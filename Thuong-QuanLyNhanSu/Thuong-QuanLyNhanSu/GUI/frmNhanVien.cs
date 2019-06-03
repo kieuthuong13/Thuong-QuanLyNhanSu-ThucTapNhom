@@ -36,7 +36,7 @@ namespace QuanLyNhanSu.GUI
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
             btnLamMoi_Click(sender, e);
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmNhanVien_FormClosed(object sender, FormClosedEventArgs e)

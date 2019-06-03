@@ -31,7 +31,7 @@ namespace QuanLyNhanSu.GUI
         private void frmPhanCong_Load(object sender, EventArgs e)
         {
             this.dgvPhanCong.DataSource = db.PHANCONGs.ToList();
-            this.WindowState = FormWindowState.Maximized;
+            // this.WindowState = FormWindowState.Maximized;
         }
 
         private void frmPhanCong_FormClosed(object sender, FormClosedEventArgs e)
