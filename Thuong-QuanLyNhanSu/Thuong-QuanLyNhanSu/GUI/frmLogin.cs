@@ -41,7 +41,7 @@ namespace QuanLyNhanSu.GUI
             string tendangnhap = db.Database.SqlQuery<string>("SELECT TOP 1 TaiKhoan FROM TAIKHOAN WHERE TaiKhoan = N'" + textBoxUser.Text + "' AND PassWord = N'" + textBoxPass.Text + "'").SingleOrDefault();
 
             // Đăng nhập thành công thì nhảy vào
-            if (this.textBoxPass.Text == tendangnhap)
+            if (this.textBoxUser.Text == tendangnhap)
             {
                 // MessageBox.Show("Đăng nhập thành công.");
 

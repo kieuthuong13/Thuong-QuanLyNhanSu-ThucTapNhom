@@ -96,7 +96,7 @@
             this.dgvBHXH.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvBHXH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBHXH.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.dgvBHXH.Location = new System.Drawing.Point(369, 143);
+            this.dgvBHXH.Location = new System.Drawing.Point(369, 69);
             this.dgvBHXH.Name = "dgvBHXH";
             this.dgvBHXH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBHXH.Size = new System.Drawing.Size(740, 427);
@@ -170,7 +170,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.Black;
             this.btnTimKiem.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.zoom_48_hot;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(498, 84);
+            this.btnTimKiem.Location = new System.Drawing.Point(498, 10);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(123, 53);
             this.btnTimKiem.TabIndex = 243;
@@ -187,7 +187,7 @@
             this.btnLamMoi.ForeColor = System.Drawing.Color.Black;
             this.btnLamMoi.Image = global::Thuong_QuanLyNhanSu.Properties.Resources.refresh_48_hot;
             this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLamMoi.Location = new System.Drawing.Point(369, 84);
+            this.btnLamMoi.Location = new System.Drawing.Point(369, 10);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(123, 53);
             this.btnLamMoi.TabIndex = 242;
@@ -269,7 +269,7 @@
             // 
             this.txtTimKiem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTimKiem.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(627, 101);
+            this.txtTimKiem.Location = new System.Drawing.Point(627, 27);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(482, 22);
             this.txtTimKiem.TabIndex = 245;
@@ -280,7 +280,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources.hoacuc3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1138, 591);
+            this.ClientSize = new System.Drawing.Size(1138, 537);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnTimKiem);
