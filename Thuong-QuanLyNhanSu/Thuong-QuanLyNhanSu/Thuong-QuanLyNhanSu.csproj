@@ -247,6 +247,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateTable_QLNV_TTN_ThuThuong.sql" />
+    <Content Include="script.sql" />
     <None Include="Resources\refresh_48_hot.png" />
     <None Include="Resources\zoom_48_hot.png" />
     <None Include="Resources\delete_f2.png" />
