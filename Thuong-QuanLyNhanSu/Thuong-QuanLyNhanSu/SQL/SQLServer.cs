@@ -13,7 +13,7 @@ namespace QuanLyNhanSu.GUI
         /// Data Source=DESKTOP-L2250;Initial Catalog=ThucTapNhom;Integrated Security=True
         public static SqlConnection GetMySQL()
         {
-            return new SqlConnection(@"Data Source=DESKTOP-6NB2THP;Initial Catalog=QuanLyNhanSu;Integrated Security=True");
+            return new SqlConnection(@"Data Source=DESKTOP-L2250;Initial Catalog=QuanLyNhanVien;Integrated Security=True");
         }
         public static SqlConnection GetSQL(string _source, string _nameDatabase)
         {
