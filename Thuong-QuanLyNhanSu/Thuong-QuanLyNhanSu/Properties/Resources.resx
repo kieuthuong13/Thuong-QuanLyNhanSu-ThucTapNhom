@@ -145,6 +145,9 @@
   <data name="background4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1.-bóng-trăng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.-bóng-trăng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="anh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anh1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,9 +181,6 @@
   <data name="editadd_48_hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\editadd_48_hot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zoom_48_hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zoom_48_hot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.-bóng-trăng1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,8 +196,11 @@
   <data name="hoacuc3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hoacuc3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Baohiemyte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Baohiemyte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="refresh_48_hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh_48_hot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_48_hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zoom_48_hot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hoacuc2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hoacuc2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,13 +220,13 @@
   <data name="hoacuc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hoacuc1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1.-bóng-trăng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.-bóng-trăng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Baohiemyte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Baohiemyte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="top_6_hinh_anh_nha_xuong_dep_khong_the_bo_qua_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\top-6-hinh-anh-nha-xuong-dep-khong-the-bo-qua-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refresh_48_hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refresh_48_hot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ahihihiii (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahihihiii (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

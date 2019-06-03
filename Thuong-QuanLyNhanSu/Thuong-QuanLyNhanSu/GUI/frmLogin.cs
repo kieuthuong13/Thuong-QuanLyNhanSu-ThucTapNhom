@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Thuong_QuanLyNhanSu.Models;
 
 namespace QuanLyNhanSu.GUI
 {
     public partial class frmLogin : Form
     {
         public static GUI.frmMainNV fmain;
+        private QuanLyNhanVien db = new QuanLyNhanVien();
 
         public frmLogin()
         {
@@ -36,10 +38,10 @@ namespace QuanLyNhanSu.GUI
                 MessageBox.Show("Tài khoản hoặc mật khẩu trống, xin hãy kiểm tra lại.");
                 return;
             }
-            MyStruct.TAIKHOAN taikhoan = GUI.Select.TAIKHOAN.GetTopOneRecord(textBoxUser.Text);
+            string tendangnhap = db.Database.SqlQuery<string>("SELECT TOP 1 TaiKhoan FROM TAIKHOAN WHERE TaiKhoan = N'" + textBoxUser.Text + "' AND PassWord = N'" + textBoxPass.Text + "'").SingleOrDefault();
 
             // Đăng nhập thành công thì nhảy vào
-            if (this.textBoxPass.Text == taikhoan.PASSWORD)
+            if (this.textBoxPass.Text == tendangnhap)
             {
                 // MessageBox.Show("Đăng nhập thành công.");
 
@@ -54,11 +56,6 @@ namespace QuanLyNhanSu.GUI
             {
                 MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu.");
             }
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void textBoxUser_KeyDown(object sender, KeyEventArgs e)
@@ -79,9 +76,9 @@ namespace QuanLyNhanSu.GUI
             }
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            Application.Exit();
         }
     }
 }
