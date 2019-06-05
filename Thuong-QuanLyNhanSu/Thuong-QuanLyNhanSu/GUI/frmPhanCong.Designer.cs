@@ -257,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources._11;
+            this.BackgroundImage = global::Thuong_QuanLyNhanSu.Properties.Resources.hoacuc3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1021, 459);
             this.Controls.Add(this.btnTimKiem);

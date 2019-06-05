@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Thuong_QuanLyNhanSu.Models;
 using System.Data.Entity.Migrations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace QuanLyNhanSu.GUI
 {
@@ -33,6 +35,37 @@ namespace QuanLyNhanSu.GUI
             this.MinimumSize = new Size(1200, 800);
         }
 
+        #region MY FUNCTION
+
+        #endregion
+
+        #region MY STRUCT - CLASS
+        [Table("NHANVIEN")]
+        public class NHANVIEN_STRUCT
+        {
+
+            [Key]
+            public int MaNhanVien { get; set; }
+
+            [StringLength(100)]
+            public string TenNhanVien { get; set; }
+
+            public DateTime? NgaySinh { get; set; }
+
+            [StringLength(100)]
+            public string GioiTinh { get; set; }
+
+            [StringLength(100)]
+            public string DiaChi { get; set; }
+
+            public int? MaNguoiGiamSat { get; set; }
+
+            public int? MaPhongBan { get; set; }
+
+            public int? Luong { get; set; }
+        }
+        #endregion
+
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
             btnLamMoi_Click(sender, e);
@@ -55,7 +88,7 @@ namespace QuanLyNhanSu.GUI
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
-            dgvNhanVien.DataSource = db.NHANVIENs.ToList();
+            dgvNhanVien.DataSource = db.Database.SqlQuery<NHANVIEN_STRUCT>("SELECT * FROM NHANVIEN").ToList();
         }
 
         private void btnThem_Click(object sender, EventArgs e)

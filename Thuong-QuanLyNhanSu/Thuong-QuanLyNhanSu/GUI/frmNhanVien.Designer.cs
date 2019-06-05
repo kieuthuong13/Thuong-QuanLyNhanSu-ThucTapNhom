@@ -361,9 +361,9 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.Location = new System.Drawing.Point(28, 425);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 15);
+            this.label7.Size = new System.Drawing.Size(84, 15);
             this.label7.TabIndex = 172;
-            this.label7.Text = "Lương             ";
+            this.label7.Text = "Lương              ";
             // 
             // dgvNhanVien
             // 
